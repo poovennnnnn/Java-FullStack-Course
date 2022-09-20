@@ -1,0 +1,5546 @@
+https://us02web.zoom.us/j/85867722382?pwd=TXFMQmtDa0Fpc29WQjdCZS9RSWlBQT09
+
+Java Full Stack
+day-1 22/aug/2022
+
+Java + Spring-Spring Boot Microservices + Angular
+
+JAVA SOFTWARE
+
+Java 8
+
+STS  : Spring Tool Suite
+Eclipse IDE
+
+IntelliJ
+
+The JAVAC command : It is used to compile a Java program
+
+  javac filename.java
+  
+ dir
+ 
+  javac Test.java --> Test.class (BYTECODE)
+
+  del Test.class
+
+ The JAVA command : It is used to execute a compiled Java program
+
+   java <name of the .class file which has a public static void main(String args[]) method inside it>
+
+  java Test
+
+  Your name
+  Your education
+  Your programming/web development skills
+
+
+JAVA  -> MYSQL -> JDBC -> HTML,CSS,JAVASCRIPT,BOOTSTRAP-> SERVLETS,JSP->HIBERNATE->SPRING CORE->SPRING JPA-> SPRING MVC->SPRING REST->SPRING SECURITY ->SPRING BOOT->MICROSERVICES->(TYPESCRIPT)ANGULAR->DOCKER->PROJECT
+
+
+What is Java?
+Java is a high level object oriented programming language.
+
+Java is used for developing different kinds of applications
+
+1. Desktop applications ->
+           retail store billing systems
+           schools data entry systems
+           hospital data entry systems
+
+2. Web applications  (SERVLETs/JSP)
+             online shopping
+             ticket application
+
+3. Embedded systems
+                 ATM
+                 Gaming devices
+                 Any other chip devices
+           
+
+Java Editions
+     JSE -  Java Standard Edition
+     JEE -  Java Enterprise Edition
+     JME - Java Micro Edition
+
+Java Version History
+
+JDK 1.0 1996  JDK 18
+
+
+Java 4 - 5 -6 - 7 - 8 - 9 -10-11 
+
+JDK
+JVM
+JRE
+JDKTOOLS
+
+
+JDK : Java Development Kit
+
+JVM : Java virtual machine
+
+JRE: Java Runtime Environment
+
+JDK tools : These are the commands such as JAVAC, JAVA, JAR from the  "bin" folder of the JDK installation such as ../JAVA.X.Y.Z	
+
+What is JDK?
+JDK = JRE + JDK TOOLS
+
+JRE = Java Libraries + JVM
+
+JVM : Java Virtual Machine, It is that part of JDK, which is responsible for loading and executing the compiled java code
+
+JVM 
+  loads the byte code (from the .class file such as Test.class) when we say sometihng like "Java Test"
+  converts BYTECODE to NATIVE CODE (CODE THAT AN OS UNDERSTANDS)
+  and then NATIVE CODE is given to OS
+  
+OS will then execute it
+
+JIT : Just In Time  compiler inside JVM
+
+What does JIT do ?
+  or
+ What is the purpose of JIT?
+ 
+ It fastens the conversion of BYTECODE to NATIVE CODE (machine code / object code)
+
+
+  Welcome.java 
+
+
+What are java libraries ?
+  These are nothing but the  IN BUILT  (or ready made) java programs 
+  
+ All these IN BUILT java programs are compressed into  file with a file extension called .JAR (java archive)
+
+  
+ banking.jar
+  movie-tickets.jar
+
+
+What are JDK tools ?
+  These are nothing but the commands such as JAVAC,  JAVA, JAR (and many more) which sit inside the "bin" of JDK installation path
+
+
+   int i = 10;     -32768  to +32767
+  long int x =12345678;
+
+    i = x; n 4000
+   print(i)25435
+
+Java Features
+ Object Oriented
+ Platform independent
+  Robust
+ Simple
+ Multithreaded
+ 
+Understanding IDE
+  Integrated Development Environment
+
+Eclipse
+STS
+IntelliJ
+
+
+A project is a colllection of different files such as .java files, .html files, .css files, .js, 
+
+A workspace is a folder used by IDE such as STS/ECLIPSE to store all our projects
+
+Perspective: A perspective is the window layout and feature display in IDE
+
+ Java Perspective 
+ Java EE perspective
+
+Create a new java project
+Create new "Java class" under "src"
+syso Ctrl+Space  System.out.println
+Ctrl+D  this will delete the line where the cursor is
+
+
+Data types in Java
+There are 8 primitive data types ( fundamental data types / basic data types)
+
+byte     short          int         long        float        double
+ 1          2               4           8             4              8
+
+char -   2
+
+boolean - vendor specific (unspecified in the specification)
+
+
+SYNTAX
+ 
+ DATATTYPE  name-of-the-variable1, name-of-the-variable2 ....;
+
+ byte b1=10;
+  short s1;
+  
+
+
+ Samsung 22 - 
+
+Everything thing such as length,width,thickness, camera, charging, audio,...  are called as specifcation 
+Blueprint
+
+A - high   10 colors
+
+B - medium  5 colors
+
+C-  poor  12 colors
+
+
+if( expression ) {
+    code to execute if expression is true
+} else {
+   code to execute if expression is false
+}
+
+----------------------------------------------------------
+DAY-2 23/aug/2022
+
+Casting and conversion
+
+Casting and conversion refers to the process of changing the data type (or class/interface type) of a variable  (or an object )
+
+
+byte v1 = 200;
+int v2 = 200;
+
+  v1 = v2 ;  //  we are trying to assing int (v2) to byte (v1);
+
+ lower-data-type-variable = (lower-data-type) upper-datatype-variable;
+
+ v1 = (byte) v2;
+
+
+CASTING vs CONVERSION
+
+ casting is an explicit action where we expliclity change wider type to narrow type
+
+ conversion is an implicit action where narrow type is automatically changed to wider type
+
+
+LOOPS
+
+ A loop is a programming feature which
+
+
+ while loop
+ for loop
+ do  while
+
+for(part-1 ; part-2 ;part-3)
+
+part-1 is for declarations or initializations
+part-2 is for test condition (expression)
+part-3 is for altering the value used in part-2
+
+the do..while
+
+do  {
+
+   code block;
+} while(test condition) ;
+
+
+All number literals in java by default belong to "int" data type
+
+  12 34 454 45 
+
+
+   long x = 120L;
+
+byte b1 = 20;  (- 128  to 127)
+
+  b1 = (byte) (b1 * 2);  (40 is again inside -128 to 127)
+         (int)
+
+All decimal numbers belong to double data type in java by default
+   float f1 = 12.3;
+ float f1 = 12.3F;
+  float f1 = (float) f1;
+
+
+Class: A class in java can contain any of the following or none of the following 
+  (i) variables
+ (ii) methods (functions)
+ (iii) constants
+ (iv) nested classes (also called inner classes) 
+ (v) enumerations
+ (vi)nested interfaces (also called inner interfaces)
+ 
+
+
+
+ syntax to declare a class
+
+  class classname {
+    list of variables
+    list of methods
+  list of nested classes
+   list of nested interfaces
+   list of enums    
+  } 
+
+ class Student {
+   // list of variables
+   int studentNumber;
+   String studentFirstName;
+
+  // list of methods
+ void printStudentDetails(){
+  System.out.println("Student Number = " +studentNumber);
+   System.out.println("Student name = " + studentFirstName);
+  }
+ }
+
+
+
+
+Object: An object is a special type of a variable whose data type is the name of a class (or an interface)
+
+
+ datatype variable-name;
+  int  x =10;
+  byte z = 20;
+
+
+         Student s1;
+
+Members of an object. All items declared inside a class belong to an object and become its members
+
+  how do we access the members that belong to an object
+    object-name.membername
+
+    s1.studentNumber = 101;
+    s1.studentName="Scott";
+   s1.printDetails(); // this line executes the printDetails() method of the object s1
+
+Working with object, is a two step process
+
+ #1. Declaring an object
+               Student s1;  
+   Declaration does not allocate space in memory to the members that belong to an object
+
+ #2. Creating an object.
+      Creating an object means, allocate space to the members that belong to an object. this is acheived
+    by execute a line of code that contains the  new operator
+     
+
+ The new operator
+    
+   We use the new operator to create object
+
+   syntax
+       object-name = new class-name();
+
+       s1 = new Student();
+
+
+Product
+   productId; (int)
+   prodName;  (String) 
+printProductDetails()
+
+
+ProductMain1
+   main()
+   create two Product class objects
+   fill the object data
+   print them
+
+
+Class and Interface naming best practice
+  
+  All classes and interfaces names are typed in PascalCase
+  
+ Employee
+ Student
+ EmployeeInsuranceDetails
+
+ 
+All variable and method names are typed in camelCase
+
+   firstName;
+   lastName;
+
+
+Movie ticket class and object.
+  it should contain the relavant one or many methods to book tickets
+  after tickets are booked,  it should then display
+ 
+   Total Tickets available before booking
+   Total tickets available after booking
+    Total number of tickets booked
+
+      if the number of tickets asked to book are more than the total number of available tickets, then a message something
+ like insufficient tickets should be printed
+
+
+
+
+PaySlipDetails
+
+    double grossSalary=8000;
+
+  deductions =   incomeTax, profidentFund, healthInsurance, carLoanEmi
+  netSalary = grossSalary- deductions
+
+ // print gross
+ // print incomeTax
+  // print..
+ // print netSalary
+
+
+PaySlipDetailsMain {
+
+}
+
+
+SalaryFinder {
+
+  void   showSalary(String designation) {
+     // using switch case display some salary  for a designation
+
+ //  if it is manager 8K, clerk 5k, accountatnt 6k
+   }
+ }
+
+ 
+SalaryFinderMain {
+  public static void main(String args[]) {
+   SalaryFinder finder = new SalaryFinder();
+   finder.showSalary("manager");
+   finder.showSalary("clerk");
+  }
+ }
+
+
+Object of one class inside other class
+
+class Address {
+    String city;
+    int zip;
+    void printAddress() {
+    System.out.println("City : " + city);
+    System.out.println("Zip : " + zip);
+  
+  }
+}
+class Employee {
+   int empCode;
+   String empName;
+   Address address = new Address() ;
+    
+   void printDetails() {
+     System.out.println("Employee Code = " + empCode);
+    System.out.println("Employee name = " + empName);
+      address.printAddress();
+   }
+}
+
+class EmployeeAndAddress {
+   public static void main(String args[]) {
+
+
+   Employee e1 = new Employee();
+   e1.empCode=103;
+   e1.empName="Scott";
+   e1.address.zip=12346;
+   e1.address.city="Some city";
+ 
+    e1.printDetails();
+
+Employee e2 = new Employee();
+    e2.address=address;
+    e2.address.city="Two city";
+
+ }
+
+}
+  
+
+
+static members and non static members inside a class
+
+class A {
+   int x;
+  static int y;
+ 
+   void m1(){
+
+   }
+
+   static void m2() {
+
+
+  }
+}
+
+
+STATIC members appear as only one copy in memory for a class, no matter, whether we create 0 objects, 1 object , many objects of that class
+
+There will always be one copy (one and only one copy) of a static member that exists in memory for  a class, even though we don't create an object, or we create 1 or more objects
+
+
+There can be anything as a static or a non static member
+
+There can be a block of code as static
+
+
+What is the need for static ?
+  Any thing which is best suitable to appear/occur only once need to be declared static
+
+
+All static code (sometimes called static context)  is loaded into memory soon after it's .class file is loaded into memory
+
+There can be any number of static blocks. 
+All static blocks are merged into one according to their textual occurence and are executed soon after the .class file is loaded
+
+ class X {
+   static int v1;
+  static void m1() {  }
+   static{   }
+   static class A {  }
+  static interface B {  }
+}
+
+
+JVM makes a call to the main() method somehting like this one
+
+  Test.main();  // classname.main()
+
+
+Which members of a class are loaded first  ?
+  static or non static 
+
+We cannot use a non static code from inside a static code
+
+class Test {
+  int x = 10;
+  public static void main(String args[]) {
+   System.out.println(x);
+  }
+
+}
+
+class Vendor {
+   int vendorId;
+   String vendorName;  
+ ........
+ 
+}
+
+class Product {
+   int prodId;
+   String prodName;
+   Vendor vendor;
+
+}
+
+
+class BankAccount {
+    int actNum;
+    double actBalance;
+}
+
+
+class Address {
+
+ }
+class Customer {
+   int custId;
+   String custName;
+    BankAccount account;
+    Address address;
+
+}   
+
+-------------------------------------------------------------------------
+DAY-3 24/AUG/2022
+
+Types of variables : 
+
+1. Local variables
+2. instance variables ( non static variables, fields, properties, attributes)
+3. static variables (class variables)
+
+
+1. Local variables.   These are declared inside a method and are local to the method inside which are declared
+
+ e.g
+    class Test {
+     void method1() {
+          int x=10, y=20;  // x and y are local to the method1
+   }
+ 
+    void method2() {
+    int i=100, j=200;  // i and j are local to the method2
+    int k;
+    k++; // this is an compilaation error
+   System.out.println(k); // this compilation error
+   }
+
+  }
+
+  Local variables are not loaded into memory unless we assign them a value.
+  Local variables are loaded into memory as soon as their method is loaded into the memory
+
+
+class TestMain {
+   public static void main(String args[]) {
+   int x;
+   x++;
+    Test t1 = new Test();
+
+       t1.method1() ;//  variables x and y are loaded into memory as soon as this line is executed
+                            // variables x and y are removed from memory as soon as this method code is completed
+      t1.method2(); // variables i , and j are loaded into memory as soon as this line is executed 
+                           // however variable k is not loaded into memory and won't be in existence because there is no value to given it
+                          
+  }
+
+ }
+
+Local variables are stored in memory a partition named STACK
+
+
+NON STATIC VARIABLES (INSTANCE VARIABLES)
+Non static variables are declared inside the class declaration and outside of all methods 
+They don't have a static keyword prefix
+  byte short int long = 0
+   float double = 0.0
+   char  =  \u0000
+  boolean  = false
+  Any object reference (object name) will be null
+ 
+ class Customer {  }
+ class Student {   }
+ class Product {   }
+class TestMain {
+    int x=15;    //  x, y , s1, c, s  are all instance variables
+    int y;
+    String s1="hello";
+    String s2;
+    Customer c1;
+    Student std1 = new Student();
+    Product p1 = new Product();
+
+
+    void method1(int x, int y) {
+  
+     } 
+
+    void method2() {
+       int x;
+    }
+
+    public static void main(String args[]) {
+    TestMain1  temp1 = new TestMain1();
+   System.out.println(temp1.s1.length());
+ System.out.println(temp1.s2.length());
+     
+   }
+}
+
+INSTANCE VARIABLES are loaded into memory and become into exisitence everytime an instance/object is created
+
+
+  String s1;
+  
+
+
+class Customer {
+   int custId;
+   String custName;
+   void printDetails(){
+  System.out.println("Custid = "  + custId);
+  System.out.println("Custname = "  + custName);
+   }
+}
+
+class Student {
+  int age;
+ String name;
+  void printAge() {
+      System.out.println("Age = " + age);
+  }
+}
+
+class Test {
+   Student std1;  // null by default
+   Customer c1;   // null by default
+   String s1="Java is a programming lnauage";  // not null
+
+   String s2 ;  // null by default
+   public static void main(String args[]) {
+   
+    Test ob1 = new Test();
+    ob1.std1.age=100;           // line 10
+    ob1.c1.custId=1234;         // line 11
+    ob1.c1.custName="Scott";   // line 12
+    ob1.c1.printDetails();         // line 13
+    ob1.std1.printAge();            // line 14
+    System.out.println(ob1.s1.length()); // line 15
+    System.out.println(ob1.s2.length());  // line 16
+
+  }
+
+}
+
+All INSTANCE variables are removed from HEAP (Object heap) when a particular object is nullfied
+
+
+class A {
+   int x;
+}
+
+class Test{
+ public static void main(String args[]) {
+    A a1 = new A();
+    a1 = null; // I am forcibly nullfying a1.  then all INSTANCE variables of a1 will be removed from HEAP
+ }
+ }
+
+
+When are INSTANCE variables loaded into memory (HEAP) ?
+  They are loaded when an instance is created
+
+When are INSTANCE variables removed from memory (HEAP) ?
+  they are removed when an object is destroyed.  object is detroyed when it is nullified.
+
+
+
+STATIC VARIABLES ( class variables)
+
+class A {
+  static int x;
+  static String s1;
+ static Customer c1;
+}
+
+STATIC VARIABLES are loaded in method area
+
+STATIC variables are loaded into memory as soon as the .class file is loaded 
+STATIC variables are remvoed from memory as soon as the .class file is removed.
+
+But when is the .class file remvoed from memory ?
+  it is removed from memory when the JVM shutsdown
+
+When does the JVM shut down ?
+  when the program execution is completed
+
+
+
+1. LOCAL VARIABLE
+2. INSTANCE VARIABLE ( fields/ attributes/ properties)
+3. CLASS VARIABLE
+
+
+Class variables are stored on ____________
+Instance variables are stored on ____________
+Local varaibles are stored on ____________
+
+
+class Test {
+
+  public static void add(int x, int y) {
+     int total ;
+    System.out.println(total);
+ }
+
+ public static void main(String args[]) {
+     add(1,2);
+  }
+}
+
+
+public class customer-details {
+   int Customer-Id;
+ String  Customer-full-name;
+   void PrintCustomerDetails() {
+
+  }
+}
+
+class Address {
+   static int zipcode=1234;
+}
+class Customer {
+  int custId;
+  String custName="Scott";
+  Address address ;
+}
+
+class Student {
+  int studentId;
+  String studentName;
+}
+
+class Test {
+   Customer c1 = new Customer();
+ Student std1 = new Student();
+  public static void main(String args[]) {
+  Test t1 = new Test();
+ System.out.println(t1.c1.address.zipcode);
+  System.out.println(t1.std1.studentId);
+  }
+
+}
+
+
+the "final" it has 3 different uses
+
+1.  to declare constants
+2. to prevent method overidding
+3. to prevent a class from being extended/inherited
+
+
+A constant is that data member whose value cannot be altered after it is assigned with a value for the first time
+
+final int MAX_SCORE =100
+
+
+All constants names are typed in UPPERCASE as a best a practice
+If constant  name contains more than one word, then they are separated by an _
+
+e.g
+  final int MAX_SCORE=100;
+  final int MIN_SCORE=20;
+
+Note. Generally all constants are declared as static, it is not a rule though
+
+class Test {
+  static final int X=100;
+  public static void main(String args[]) {
+   Test t1 = new Test();
+    Test t2 = new Test();
+ }
+}
+
+
+the "this" pointer.
+  
+The JRE maintains a built in pointer,  this
+
+The this pointer always points to the currently active object
+
+Currently active object is that one, upon whose code JVM is currently executing
+
+Encapsulation:  It is the process in which we bind (we encapsulate) both INSTANCE VARIABLES (data) and INSTANCE METHODS (code) into one single unit
+
+
+
+Method overloading : Is the process in which, we can declare more than one method with the same name by following one rule
+
+class Compute {
+   public void add(byte x, byte y) {
+    System.out.println("Inside two bytes version" + (x+y));
+   }
+   public void add(short x, short y) {
+    System.out.println("Inside two shorts version" + (x+y));
+   }
+   public void add(int x, int y) {
+    System.out.println("Inside two int version" + (x+y));
+   }
+   public void add(long  x, long y) {
+    System.out.println("Inside two longs version" + (x+y));
+   }
+}
+
+
+NOTE. When working with method overloading, it is required, that the different versions of the same method,
+    (I) either must have different number of parameters
+   (ii) OR, if they have same number of parameters, then their data types sequence must be different
+  
+ METHOD overloading, does not force that the  return type and access specifier to be NEITHER SAME NOR DIFFERENT
+
+ class  Shape {
+
+   area() // circle
+   area() // square
+   area() // triangle
+ }
+
+  class ShapeMain{
+
+ }
+
+class Address {
+  private int zip;
+ private   String city;
+   getters/setters
+}
+
+class Student  {
+    private int studentId;
+    private String sname;
+    private Address address;  
+getters/setters
+}
+class Customer{
+    private int customertId;
+    private String cname;
+    private Address address;  
+getters/setters
+
+}
+
+class AddressOverload {
+ 
+  public void printAddress(Student student) {
+  // the code here should print the address of the student tobject
+ }
+  public void printAddress(Customer customer) {
+  // the code here should print the address of the customer object
+  }
+}
+
+
+class AddressOverloadMain {
+  main(.......)  {
+    // create an object address for student
+   // create a student object, and fill stdId, sname, address 
+   // repeate the above two for customer
+  // create an object of AddressOverLoad
+ // call the printAddress(Student)
+  // call the printAddress(Customer)
+}
+}
+
+Constructors:   
+1 Constructor is a method of a class which has the same name as its class name (both spelling and case)
+  
+2. Constructor has NO return type
+
+ e.g
+       class Test {
+           Test() {
+            // some code here
+        }
+   }
+
+3. Constructor is executed automatically ONCE per each object (and only time) during the object creation
+
+4. Constructors are used to provide some initial values to the INSTANCE VARIABLES on an object
+
+5. Default Constructor: A constructor that is automatically there for every class is called default constructor
+ NOTE. Default constructor has NO PARAMETERS 
+  Test t1  = new Test(10,100);
+		Test t2 = new Test(20,200);
+		Test t3=  new Test(30,300);
+		
+Test(int i, int j){
+		System.out.println("hello from Test() cons...");
+		this.i=i;
+		this.j=j;
+	}
+
+
+class Engine {
+   int cc;
+   String model;
+  getters/setters
+
+}
+
+class Car {
+  String brand;
+  Engine engine;
+  getters/setters
+
+}
+
+Given a Car, we should get out the Engine from it and print cc, model
+
+
+class BankAccount {
+  int actBalance;
+  String branchName;
+  getter/setters
+}
+
+
+class Customer {
+   int customerId;
+   String customerName;
+   BankAccount account;
+
+getters/setters;
+}
+
+
+class CustomerMain {
+  public static void main(String args[]) {
+    // create an object of BankAccount
+     BankAccount  b1 = new BankAccount();
+              b1.setActBalance(10000);
+              b1.setBranchName("branch-1");
+   // create an object of Customer 
+   Customer c1 = new Customer();
+   // now fill the customerId;
+      c1.setCustomerId(101);
+  // now fill the customer Name
+    c1.setCustomerName("Guest");
+   // now insert the BankAcount object b1 into the customer object c1
+      c1.setBankAccount(b1);
+ }
+
+}
+___________________________________________________________________
+DAY 4  25/AUG/2022
+
+CONSTRUCTORS contd.
+
+5. Default constructor
+   A consrructor which has ZERO parameters is called default constructor
+ 
+ e.g
+       class Test {
+         Test() {
+
+     }
+
+    }
+6. Constructor overloading. We can overload constructors just like methods.   It means, there can be more than one constructor in a class. 
+
+  e.g
+    class Test {
+        Test() {
+         System.out.println("Constructor with zero parameters.  It is the default constructor");
+
+     }
+
+        Test(int i, int j) {
+         System.out.println("Constructor with 2 parameters.  It is called the parameterized constructor");
+
+     }
+
+   Test(long i, int j) {
+         System.out.println("Constructor with 2 parameters.  It is called the parameterized constructor");
+
+     }
+
+
+   }
+
+
+public class Address {
+     private int zip;
+     private String city;
+
+   // #1 default constr
+  // #2 two parameter constructor zip, city
+
+    getters/setters;
+
+ }
+ public class Customer {
+  
+      private int custId;
+      private String custName;
+      private Address address;
+
+
+    // #1 default consructor
+    // #2  Two parameter constructor  -- custId, custName
+   // #3  Three paramater constructor -- custId, custName, Address object
+
+ // getters/setters
+
+      
+ }
+
+ public class CustomerConsMain {
+    main(....) {
+      //  #1 create a Customer with default parameters
+     // #2  create a Customer object with two parameters
+   //#3  create a Customer object with three parameters
+  
+    Address addr1 = new Address(); 
+       addr1.setZip(1224);       addr.setCity("");
+          Customer c1 = new Customer(param1, param2, addr1)
+
+     Customer c3 = new Customer(1234, "Scott", new Address(param1, param2...) )
+
+   // #4 print the c1 details
+   // #5 print the c2 details
+   //#6 print the c3 details
+
+  // NOTE. for printing it is upto you
+   }
+
+ }
+
+public class BankAccount {
+   private int actNumber;
+   private double actBalance;
+   private Customer actCustomer;
+
+
+   // #1  default cons (zero param cons..)
+  // #2 two param cons .. actNumber, actBalance
+  // #3  3 param cons.. actNumber, actBalance, actCustomer
+ // getters/setters
+ 
+  // method1  public void showBalance() {  Sop(actBalance)  }
+
+  // # method2  public void withdraw(double howMuch)
+ // while withdrawing, check if howMuch > actBalance.. print insufficient funds  otherwise withdraw
+ // after withdrawing .. print balance before withdraw, and after withdrw
+
+ // #method3 public void deposit(double howMuch)
+ // just add howMuch to balance...
+ // after depositing.. print balance before deposit and after deposit
+ 
+  
+
+}
+
+
+public class BankAccountMain {
+  main(...)  {
+     // #1 BankAccount b1  with default cons
+    // #2 BankAccount b2  with 2 param cons
+   //#3 BankAccount b3  with 3 param cons
+
+   // demonstrate withdraw and deposit on all b1, b2, b3
+  // print the details of b1, b2, b3
+
+  }
+}
+
+
+#7 the super()  constructor :  this one triggers call to the constructor of the immediate super class. (more on this during inheritance)
+
+#8.  constructors can be declared using public, private, protected or default (no keyword) 
+
+#9. Constructors CANNOT be static. if we try do so, it is a compilation failure
+
+#10. Constrcutors CANNOT be final
+ 
+#11. Constructors cannot be executed more than once
+
+#12. the  this() constructor. There can be more than one overloaded constructor, and in such case, one version of a constructor can make a call to other version of a constructor using  this().   this() may take parameters
+
+
+#13. If there is a call to this() then it MUST be the first statement
+
+#14.  there is a tough competition between super() and this(), i.e
+     super()  has to be the first statement (if we want to use super()  )
+     this () has to be the first statement (if we want to use this()  )
+     in otherwords, we cannot do something like the below 
+
+    class A {
+
+    A() {
+    this();
+    super();
+
+   }
+   A(int i) {
+
+   }
+   }
+
+#15.  If we don't declare AT-LEAST (if we don't type) in a class's  .java file, then the compiler automatically adds the default constructor in that java file
+
+  e.g
+    what we type is the below one
+    class Test {
+
+    }
+    what it becomes is the below one 
+   class Test {
+   Test() {
+
+    }
+  
+  }
+
+
+#16.  If we type atleast one constructor in a java file, then the compiler won't automatically provide the default constructor. we have to explicitily provide it
+
+
+      what we type is the below one
+    class Test {
+     Test(int i) {
+
+    }
+
+  }
+   what it becomes is the same. means, no default const (no param cons available)
+      class Test {
+      Test(int i) {
+
+     }
+    }
+
+
+Arrays in Java.
+
+ #1. An array is a collection of variables that have the same name with different index
+ #2. Arrays in java are considered as objects , therefore we need to make of use of the "new" operator
+
+      datatype name-of-the-array[] ;
+      name-of-the-array = new datatype[array-size];
+
+    int numbers[];  // only declaration happens. memory is not allocatedd
+    numbers = new int[5] ; // now the array is created and memory is allocated to 5 items of the array
+
+  datatype name-of-the-array[] =  new datatype[array-size];
+
+   int numbers = new int[5]; // memory is allocated to 5 elements of the aray
+ #1  five floats
+ #2.  3 chars
+ #3. 3 Strings
+  #4.   3 Customers 
+  #5.   3 Students
+
+
+   int numbers[]  = new int[5];
+
+All array elements are kind of instance variables of the respective array
+
+
+ class Numbers {
+      int numbers[0];
+      int numbers[1];
+     int numbers[2];
+    int numbers[3];
+    int numbers[4]
+ }
+
+Numbers numbers = new Numbers();
+ 
+
+the "length" attribute of arrays.  Arrays in java like in JavaScript has a "length" 
+
+ArrayIndexOutOfBoundsException : this is a class name from the Java library
+
+If we refer to an array element beyond the array capacity, it is a successful compilation, but it fails during runtime with an exception called ArrayIndexOutOfBoundsException
+
+
+Initializing an array. We can do this in two ways
+
+1.   
+datatype name-of-the-array[] = new datatype[] { val1, val2... valN };
+ int numbers[] = new int[] { 10,23,45,54,56 };
+
+2.   
+datatype name-of-the-array[] = { val1, val2... valN };
+ int numbers[] = { 10,23,45,54,56 };
+
+Two dimensional array
+
+ int numbers[][] = new int[2][2];
+
+  String namesAndCities[][] = new String[3][3];
+  
+  
+  int numbers[][] = {   
+            { val1, val2, val3},
+            { val1, val2, val3},
+            { val1, val2, val3}
+  };
+
+  
+  String strings[][] = {  
+   {val1, val2, val3},
+  {val1, val2, val3},
+  {val1,val2,val3}
+ };
+
+ 
+the "enhanced for loop"  (also called as for..each loop)
+
+for(Type t: arrayOrCollection) {
+
+}
+
+Java Command Line Arguments.
+ 
+What are command line arguments?
+  These are  the values that we can supply into the program
+ VIA the command line (or console)
+
+Part of the OOP, Encapsulation
+
+Inheritance.
+   In is an approach in Object Oriented Programming,  in which,
+  one class inherits  the code/features of other class
+  
+ 
+  1. eliminating duplicate code
+  2. acheiving POLYMORPHISM
+
+
+class PermamentEmployee {
+   private int empId;
+   private String empName;
+   private double grossSalary;
+  costructors/ getters/setters/
+
+  public void calculateNetSalary() {
+   the net salary is calculated  by deducting all dedcutions from gross slaary
+//  income tax + insuarance + emi + pf + hra 
+  }
+//  income tax + insuarance + emi + pf + hra 
+
+}
+
+
+class ContractEmployee {
+   private int empId;
+   private String empName;
+   private double grossSalary;
+  costructors/ getters/setters/
+
+// fixed deduction of tax
+  public void calculateNetSalary() {
+   the net salary is calculated  by deducting fixed amount tax
+   // fixed deduction of tax
+  }
+}
+
+
+METHOD OVERRIDING.   
+  It is an approach in which a child class redeclares a method (or any number of methods) of its parent class
+ with same signature
+ 
+ same signature means
+  1. same return type
+  2. same number of parameters
+  3. same data type sequence of parameters 
+
+In this explanation, the parent class version of method is called as overidden version
+ the child class version of the method is called as overiding version
+class A {
+   void m1(int i, int j) {
+   //some code goes here
+  }
+ }
+
+class B extends A {
+   void m1(int i, int  j) {
+   //some code goes here
+  }
+}
+
+
+class Test extends B{
+    public static void main(String args[]) {
+   B b1 = new B();
+    b1.m1();
+ }
+}
+
+
+A super class object reference can point to an object of any of its subclasses
+
+
+A a1 = new A();
+
+B b1 = new B();;
+
+A a1 = new B();
+
+
+-------------------------------------------------------------------------------------------
+DAY 5  26/aug/2022
+
+
+When a super class object reference points to an object of its subclass, then it has no knowledge about the 
+exclusively declared members of the subclass.
+
+It onlys know about the 
+ (i) inherited members from the parent class
+(ii) overriden members
+ 
+  A a1 = new B();
+class A {
+   private int i;
+   private int j;
+ 
+   public void m1(int i) {
+
+ }
+  public void m2(int j) {
+
+ }
+
+}
+class B extends A {
+    private int x, y;
+    public void m1(int i) {
+
+    }
+   public void m3(int j) {
+
+  }
+}
+
+inherited members
+overriden members
+exclusive members
+
+   
+Employee e1;
+
+PermanentEmployee p1 = new PermanentEmployee();
+ContractEmployee c1 = new ContractEmployee();
+  e1 = c1 ;  // line 1
+  e1.showNetSalaryAfterDeductions(); // line2
+   e1.printDetails();   // line 3
+  e1 = p1;  // line 4
+  e1.showNetSalaryAfterDeductions(); // line 5
+   e1.printDetails(); // line 6
+   
+Abstract method. Any method which has JUST A DECLARATION, but no implmentation,
+it is called as an abstract method.
+
+Non abstract method . Any method which has an implementation is called no abstract method
+CONCRETE methods.  Non abstract methods are also called as CONCRETE METHODS
+
+abstract class: A class which contains ATLEAST one abstract method, is called as an abstract class
+
+
+We cannot create an object for an abstract class
+
+
+concrete class. A class with ZERO abstract methods inside it is called a concrete class
+
+
+There can be an abstract class with ZERO abstract methods in it . (this is because, sometimes we may want to restrict people to create an object of our class)
+abstract class Test1 {
+    public void m1() { // some code here }
+    public void m2() { // some code here }
+    public void m3() { // some code here }
+  }
+
+abstract class Test2 {
+    public void m1() { // some code here }
+    public void m2() { // some code here }
+    abstract public void m3() ;
+  }
+
+ class Test3 {
+    public void m1() { // some code here }
+    public void m2() { // some code here }
+    abstract public void m3() ;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+class Test {
+   public void m1() {
+  // some code here
+   }
+
+  abstract public void m2() ;
+
+  abstract public void m3();
+
+  public void m4() {
+  // some code here
+  }
+
+   abstract public void m5() {
+   // some code here
+   }
+
+    abstract public void m6() {
+  // some code here
+    }
+}
+
+
+
+the "abstract" keyword. It  is used to declare abstract methods and abstract classes.
+
+
+What are the abstract classes  and abstract methods  used for ?
+   They are used in a situation, where there is a common code given by the parent class that is required by all children classes, and where there is a some functionlity  (some code) which is specific to each child
+
+
+class FlightTicket {
+  int flightNum;
+  String origin;
+ String detst;
+   int depTime;
+ 
+}
+
+class EconomyTicket  extends FlightTicket{
+   private String softDrinkName;
+   getter/setter
+  showBenefits() {
+    boarding is oridnary
+    seating is standard
+   }
+}
+
+class BusinessClassTicket extends FlightTicket{
+  private int freeExtraBaggageWeight;
+  getter/setter
+  showBenefits() {
+     boarding is priority 
+     seating is special seating
+  }
+}
+
+
+bookTicket(FlightTicket t ) {
+
+}
+
+abstract class A {
+    int i;
+   abstract void m1();
+}
+
+class B extends A {
+
+  void m1() {  } // overridden
+   void m2() {  } // some exclusive method. neither inherited nor overridden
+}
+
+class C extends A {
+
+  void m1() {  } // overridden
+   void m3() {  } // some exclusive method. neither inherited nor overridden
+}
+class TestMain {
+   public static void main(String args[]) {
+          TestUtiliy.testMethod(new C() );
+  }
+ }
+class TestUtitily {
+   static void testMethod(A a) {
+        a.m1();
+   if(a instanceof B ) {
+          B b1 = (B) a;
+          b1.m2(); //works now
+    } else  if (a instanceof C ) {
+         C c1 = (C) a;
+          c1.m3(); //works now
+
+  }
+}
+
+if a is pointing to an instance of (object of) class B
+
+
+Downcasting an object reference from parent class to child class name
+
+
+PermanentEmployee i =10;
+Employee x = 20;
+
+ i =(PermanentEmployee) x;
+
+
+The instanceof operator. It is used to check whether a given object reference points to an object of a specific class in need
+
+A few points about an abstract class
+
+1. We cannot create an object of an abstract class
+2. abstract class can contain concrete methods and abstract methods
+3. abstract class can contain constructors
+4. An abstract method cannot be "final"
+5. An abstract class can extend other class
+6.An abstract can implement one or more interfaces 
+
+V.IMP  If any class extends an abstract class, then that child class has to
+
+EITHER override all abstract methods of abstract class , concretely
+
+OR, the child class has to declare itself as abstract if it overrides few only method concretely
+
+abstract class A extends Test {
+   abstract void m1();
+  abstract void m2();
+   void m3() {}
+    void m4() {}
+}
+
+abstract class B extends A  {
+
+    void m2() {   // some code here }
+   void m5() {  }
+}
+ 
+class C extends B {
+
+    void m2() {  }
+}
+
+A a1 =new B();
+  a1 = new C();
+
+B b1 = new C();
+
+class A {   }     class B {  }   class C  {  }
+
+class D extends A,B,C {  } // this is not supported in Java, multiple inheritance
+
+
+abstract class Shape {
+    abstract void area();
+    abstract void category();
+   
+}
+
+class Triangle extends Shape {
+    public void area() {  // some stuff here } 
+}
+
+class Rectanlge extends Shape {
+  public void category() {  // some stuff here }
+}
+
+class MathAndScienceShape  extends Shape {
+    public void area() { // some stuff here }
+  public void category() {  // some stuff here }
+
+}
+
+class ScienceAndGeography extends Shape {
+
+}
+
+ DAO - Data Access Object
+abstract class StoreData {
+   abstract void storeInMongo();
+   abstract void storeInMySQL();
+   abstract void storeInOracle();
+}
+
+
+
+
+the super() constructor.  
+   It executes a construtor of an immediate super class from within the constructor
+ of a subclass
+ 
+ super() .. is always there as a first statement in any constructor.
+
+V IMP. When we create an object of a class, then, a list of constructors across all
+ its super classes are executed from TOP to BOTTOM in descending order
+
+ class A {   }
+class B extends A { }
+class C extends B {   }
+
+the super keyword.  It is used to refer to the copy of a super class member from inside the code of a sub class member in case of duplicate names
+
+ class A2 {
+    int i =10;
+    void m1() {
+    System.out.println("m1 of class A ");
+    }
+  }
+
+class B2 extends A2 {
+   int i =20; 
+   void m1() {
+    
+    System.out.println("m1 of class B");
+   }
+  void m2() {
+    System.out.println("  I = "  + i) ; // this prints 20
+    System.out.println(" super.i =  " + super.i); // this prints 10     
+   m1(); // this calls  m1 of B
+      super.m1(); // this calls m1 of A
+   }
+}
+
+
+the  java.lang.Object class.  It is the implicit super class of all java classes.
+
+class Test extends java.lang.Object{
+
+}
+
+
+the "final"  keyword. It has 3 uses
+
+1. to declare CONSTANTS
+2. to prevent method overriding
+3. to prevent a class from being inherited 
+
+final class A  {
+void m1() {
+      System.out.println("m1");
+   }
+ void m2() {
+      System.out.println("m1");
+   }
+  void m3() {
+      System.out.println("m1");
+   }
+  
+}
+class B extends A {
+   void m1() {
+     System.out.print("m1 of B");
+    }
+}
+
+
+interfaces in java (with respect to versions upto  VERSION 7 (including 7).
+
+
+An interface is a collection of 
+  (i) CONSTANTS
+ (ii) abstract methods
+
+Interfaces are declared using the "interface" keyword
+
+Interfaces ares are used to acheive 100% abstraction
+
+interfaces are declared like the way classes are declared.
+
+  interface interface-name {
+    constant-1;
+    constant-2; 
+    constant-N;
+ 
+   abstract-method-1;
+   abstract-method-2;
+   abstract-method-n;
+ }
+
+
+interface A {
+ public static final int MAX_SCORE=10;
+ public static final int MIN_SCORE=5;
+public abstract void sum(int i, int j);
+  public abstract void prod(int i, int j);
+
+}
+
+All data-items (data-members) such as MAX_SCORE,MIN_SCORE of an interface
+are implicitly public, static, final.  which means, we can ignore those keywords.
+
+All methods of an interface are implicitly public, abstract.
+
+ A  a1 = new A(); // usesless-- because everything is abstract -- error
+
+To make use of an interface, we need to create / declare a class that overrides all methods of an interface concretely and public ly
+
+
+the "implements" keyword. This is used to establish a link between an interface and a class that  want to override the methods of that interface
+
+class class-name implements interfacename-1, interface-name-2,interface-name-N {
+
+}
+
+In the following example, class TestA is said to implement the interface "A"
+class TestA implements A {
+public void sum(int i, int j) {  
+  System.out.println("addition of i and j");  
+}
+  public void prod(int i, int j) {  }
+  System.out.println("prod of i and j");
+}
+
+class TestMain4 {
+  public static void main(String args[]) {
+   A  ob1 = new TestA();
+     ob1.sum(10,20);
+    ob1.prod(1,2);
+  System.out.println(A.MAX_SCORE);
+  System.out.println(A.MAX_SCORE);
+
+ }
+ 
+}
+
+To create a class that makes use of an interface different naming standards are followed as per the convenience
+
+  the class-name + a suffix of the interface name
+
+ e.g
+   Test + A  = TestA // so that if we look at the class name we understand that class TestA isa class that implements interface
+
+  the interface-name + a suffix of "Impl"
+
+   e.g
+
+   A + Impl = AImpl  // which means the class AImpl is an implementation of an interface A
+
+
+One interface can have many implementation classes
+
+e.g
+   public interface StoreData {
+     public abstract void insertRecord(Employee e);
+    
+  }
+ 
+class MySqlStoreData implements StoreData {
+   public void insertRecord(Employee e)  {
+    // pull out the fields from e using something like e.getEmpId();
+  // and then drop them in MySQL table
+   }
+}
+ 
+class MongoDBStoreData implements StoreData {
+   public void insertRecord(Employee e)  {
+    // pull out the fields from e using something like e.getEmpId();
+  // and then drop them in MongoDB
+   }
+}
+
+class PdfStoreData implements StoreData {
+   public void insertRecord(Employee e)  {
+    // pull out the fields from e using something like e.getEmpId();
+  // and then drop them in a pdf file
+   }
+}
+ 
+
+Design a Banking operations
+
+1. BankAccount as the parent class (with suitable parent class members)
+2. SavingsBankAccount and CurrentBankAccount with suitable specific functionality of their own
+       For e.g. SavingsBankAccount has a speficific functionaliy to itself  calculatSavingInterest
+                   CurrentBankAccount has a specific functionality to itself  calculateOverDraftLimit
+4. BankAccountUtility
+
+
+1. LoanAccount
+2. CarLoan,  HomeLoan, StudyLoan
+3. LoanUtility
+
+
+1. DeliveryPartner
+2. OrdinaryDeliveryPartner, PriorityDeliveryPartner, InterntionalDeliveryPartner
+3.
+
+----------------------------------------------------------
+
+DAY 6 29/AUG/2022
+
+interface Circle {
+   public abstract void drawCircle();
+}
+
+3 or 4 classes that implement the Circle interface, 
+
+1. DrawSolidCircle
+2. DrawHollowCircle
+3. DrawSemiFilledCircle
+
+#1 main method class, like  CircleMain1
+  Inside the main method , create an object reference of Circle class  e.g. c1
+  and c1 should point to different objects of the classes like DrawSolidCircle, and others and then call the drawCircle() method.
+
+      System.out.println("now drawing solid circle...");
+
+
+interface Payment 
+     processPayment();
+
+
+CreditCardPayment  : payment done by Credit Card
+DebitCartPayment
+InternetBankingPayment
+PaypalPayment
+
+PaymentMain
+
+ "Booking a room in a hotel"
+ 
+www.quickbooking.com
+
+  hotels.. prices..  
+
+
+www.easybooking.com
+
+ hotels.. prices...
+
+
+FEW POINTS ABOUT INTERFACES
+
+1. We cannot create an object for an interface
+           Circle c1 = new Circle() ;//  error , because Circle is an interface
+
+2.  We can declare object reference to an interface
+      Circle c1; //  c1 is an object reference to Circle interface
+
+3.  The object reference of an interface CAN POINT to an object of any of it's implementation classes
+      Circle c1 = new SolidCircle(); //   Circle is an interface, SolidCircle implements Circle interface
+
+4. A class that implements an interface has to do one of the following
+     (i) EITHER the class has to override all methods declared in the interface (public ly)
+    (ii) OR, if the class  overrides one or few methods only, then the class has to be declared as an abstract class
+
+5. A class can implement, as many interfaces as it want to (depending upon the problem statement's demand)
+      interface One {  void m1() ; }      interface Two {  void m2(); }    interface Three { void m3(); }
+     class OneTwoThreeImpl1  implements One, Two, Three {
+
+      }
+ 
+    class OneTwoThreeMain {
+     main (....) {
+
+    One one = new OneTwoThreeImpl() ;
+       one.m1();  
+       one.m2(); // fails
+       one.m3(); // fails
+     Two two = new OneTwoThreeImpl();
+          two.m1(); // fails
+           two.m2(); // works
+          two.m3(); // fails
+
+      }
+    }
+
+
+6. Java 8 onwards an interface can contain two special methods
+   (i) default methods.  The methods declared using default keyword prefix 
+   (ii) static methods.  the methods declared using static keyword prefix
+
+7. Functional interface. (from Java version 8 onwards)
+
+   @FunctionalInterface
+     interface Test {
+       public abstract void greet(String firstname, String lastname);
+
+
+  }
+
+Annotation.  An annotation is a java code with some name  with a combination of
+   @ + some name
+
+   e.g
+    @FunctionalInterface
+    @Override
+
+8.   One interface may extend ZERO or MANY other interfaces
+   
+
+ interface One {  void m1() ; }      interface Two {  void m2(); }    
+
+interface Three extends One, Two { 
+void m3(); 
+}
+
+9. A class can extend one class, and implement zero or many interfaces
+  
+class  Greeting {
+   public void happyNewYear(String guestName) {
+    System.out.println("Happy new year = "  + guestName);
+   }
+}
+
+interface Wish {
+   public abstract void whatsYourWish(String wishName) ;
+}
+class TestGreetingWish  extends Greeting implements  Wish {
+   public whatsYourWish(String wishName) {
+  System.out.println("I hope your wish " + wishName + " is fulfilled ");
+  }
+}
+
+class Main {
+   public static void  main(String args[]) {
+      TestGreetingWish ob1 = new TestGreetingWish(); 
+      ob1.happyNewYear("Scott");
+     ob1.whatsYourWish("take a roller coaster ride...");
+  }
+}
+
+
+
+
+Interfaces are used to acheive abstraction.
+
+Design pattern. What is it ?
+  A design pattern defines an effective solution to solve a problem statement
+There are so many design patterns.
+
+Factory design pattern. is a pattern, which contains classes called as Factory class
+
+The factory class is responsible for creating an object of the respective type during runtime based on the chosen one
+
+public class StoreDataFactory  {
+   
+
+
+   public static StoreData createStoreData(String storeDataType) {
+    if(storeDataType.equals("Mysql")) {
+      return new MySqlStoreData();
+    } else if (storeDataType.equals("Mongo"))  {
+      return new MongoStoreData();
+   }
+
+   }
+
+}
+
+OOPs Object Oriented Programming system
+
+Encapsulation : helps modifying instance variable names without the client's code broken
+Inheritance : elimnate duplicate code and also ahceive polymorhphism
+Polymorphism : acheive abstraction 
+Abstraction: helps easy code maintenance
+
+
+Packages in Java.
+ A package in java is used to  put all related classes/interfaces into one logical group or folder
+
+For e.g All database related classes and interfaces go inside a package called  "dao"
+
+  All banking related classes and interfaces go inside a package "banking"
+
+ all plain classes such as Product, BankAccount, Customer,  Employee go inside a package called "dto" (Data transfer object) (DataValue object) dvo,  beans
+
+We create packages using "package" statement
+
+e.g
+
+ Test.java
+
+   package p1;
+   public class Test {
+
+  }
+
+ Hello.java
+
+   package p1;
+  public class Hello {
+
+ }
+
+
+Greeting.java
+
+ package p2;
+   public interface Greeting {
+
+  }
+
+NewYearGreeting.java
+
+package greeting;
+ public class NewYearGreeting implements Greeting{
+
+ }
+
+BirthdayGreeting.java
+
+ package greeting;
+ public class BirthdayGreeting implements Greeting{
+
+}
+
+
+GreetingMain.java
+
+package greeting.client;
+import p2.Greeting;
+import p2.NewYearGreeting;
+
+public class GreetingMain {
+   public static void main(String args[]) {
+       Greeting greeting = new NewYearGreeting();
+       greeting.methodname();
+  }
+}
+
+
+The package names are typed in complete lower-case
+packages can be nested 
+ greeting.client
+
+package names are usually, the reverse of a web site doman name and sub domain name
+
+package com.google.photos;
+
+package banking.sc.loans;
+
+package banking.sc.insurance;
+
+package banking.dbs.
+
+In  a typical java project, the following package names  
+ DTO s are alternatively called with different names like DVO, BEANS
+  com.pms.dto  
+  com.pms.service
+  com.pms.dao
+  com.pms.client
+  com.pms.payments
+  com.pms.delivery
+  com.pms.constants 
+      public interface AllConstants {
+       public static double DISCOUNT_PERCENT = 5;
+     }
+
+
+pms.jar
+
+A few buit in java standard edition packages
+
+   java.lang :   This package contains the CORE (the fundamental ) classes and interfaces of Java
+          Object  String, StringBuffer, StringBuilder  : used to work with string manipulation
+        wrapper classes like  Byte, Integer, Long....
+     System, Comparable
+  java.util :  List, 
+  java.io
+  java.util.concurrent
+  java.sql
+ javax.sql
+
+   rt.jar
+  public class Student extends java.lang.Object{
+
+  }
+ 
+All packages in java are usually compressed in a ZIP file of somename
+
+the file extension of a java zip file is JAR (Java Archive)
+
+Java access specifiers. 
+ These are the keywords which declare the visibility/accessbility scope of 
+   a class
+   an interface
+   or member of a class or an interface
+
+There are four access levels in java. For three access levels, keywords are ther,
+
+ private 
+ protected
+ public
+
+
+1. private members are visible only inside the class in which they are declared
+  e.g.
+   class A {
+  private int i;
+  private void test(){  }
+    }
+
+2. public members are visible in any class of any package
+ 
+3. protected members are visible in
+  (i) the same class
+ (ii) different class of the same package even if the class is not a sub class
+ (iii) different class of the same package even if the class is a sub class
+ (iv) different class of a different package if the class is a subclass
+
+4. default. If we don't use any of public, private, protected keywords to declare a class itself then all the members of a class belong to  default category
+  e.g
+    class A {
+     int i;
+     void m1(){  }
+  }
+
+  (i) the same class
+ (ii) different class of the same package even if the class is not a sub class
+ (iii) different class of the same package even if the class is a sub class
+
+
+the java.lang and its important class(es)/interface(s)
+ This is the fundamental package (the core package) which contains all the fundamental classesa nd interfaces required by almost every java program (every .java file)
+ 
+A few classes and interfaces
+   (i)Object  class
+ (ii) Comparable interface
+ (iii) Class  class
+  (iv) String, StringBuffer, StringBuilder classes
+  (v) Wrapper classes  -  Integer, Byte, Short, Long, Float, Double, Character,Boolean
+
+the Object class and its methods
+  Th Object class is an automatic/implicit super class of all  java classes
+
+ A few methods of it
+  1.  String toString()  : This method is used to return a string description of a class/object. We need to override this method in our own java classes, to get the relevant output
+ 2.Class getClass : this method gets us the Class object of a given object
+3. equals() : this method's purpose is to check whether two objects of a given class are equal eaccording to the data in them
+  the built in functionality of the equals() method is that it compares whether two given object references point to 
+ the same physical object in memory 
+4. hashCode(). this method returns the hashCode of a object
+  What is a hashCode ?
+    is an integer. 
+  By default, hashCode of an object returns an integer which indicates the memory cell address where a given object is stored
+
+5. wait() notify() notifyAll()
+
+6. finalize() - deprecated
+For the purpose of efficient working with Java collections hash* related stuff, we need to override the hashCode() method oursevles
+
+What is hashing ?
+   It is technique which is used to store and retreive (find) objects efficiently in memory
+
+  	Product p1 = new Product(101,"Mobile");
+	Product p2 = new Product(102,"Charger");
+
+
+what we write is the below one
+
+	System.out.println("P1 = "+ p1);
+	System.out.println("P2 = "+ p2);
+
+What it becomes is the below one
+
+	System.out.println("P1 = "+ p1.toString());
+	System.out.println("P2 = "+ p2.toString());
+
+
+Class getClass()
+
+Every object loaded into the memory, has an object of a Class class associated with it
+
+    Class c1 = p1.getClass();
+     c1.getName();
+
+______________________________________________________________________
+Day 7 30/AUG/2022
+
+ 
+  Client/Main -> Service  (contains method calls to objects which contain logic) ->
+
+Garbage collection. It is the process in which the Garbage Collector
+
+ Customer c1 = new Customer();
+  c1.setX()
+  c1.setX()
+  c1.get()
+  c1.setX()
+  c1.getX()
+  c1 = null; // this will disconnect the pointer c1 to the object it points
+ Customer c2 = new Customer();
+  c1.setX()
+  c1.setX()
+  c1.get()
+  c1.setX()
+  c1.getX()
+  c2= null;
+ Customer c3 = new Customer();
+  c1.setX()
+  c1.setX()
+  c1.get()
+  c1.setX()
+  c1.getX()
+  c3 = null;
+ public class Customer {
+
+  protected void finalize() {
+  // some code here.. that releases/closes any system resources
+ // any data base connection is closed 
+ // any network connection is close
+ // any file is closed
+   }
+}
+
+The Comparable interface  : It has a single abstract method.
+  (Any interface which has a single (and only single) abstract method is called a functional interface)
+
+
+The method is compareTo(Object o) and is used to compare two objects against their natural order (natural sequence)
+
+    React Js  Angular  Vue Js
+
+ public int compareTo(Object o) {
+     String temp=  (String) o;
+    return this.compareTo(temp);
+  
+  }
+
+
+
+
+Any interface which contains single abstract method and zero or many default/static methods is called a functional interface
+
+
+public class CircleImpl1 implements Circle {
+  public void area(double radius) {
+  // some code here
+  }
+
+}
+
+
+	Circle c4 = r->System.out.println("Radius="+r);
+
+ Circle c4 = new CircleImpl1();
+
+
+WRAPPER CLASSES, What are they ?
+  These are the classes, which WRAP primitive data type variables, into objects
+
+  e.g
+   instead of saying
+
+   int i = 10;
+   we say
+      Byte b1 = 10;
+    Short s1 = 10;
+      Integer i = 10; 
+    Long l1 =10L;
+   Float f1 = 10.23f;
+    Double d1 = 10.23;
+
+   char - Character
+  boolean - Boolean
+
+
+  Byte Short Integer Long Float Double Character Boolean
+
+  LinkedList<Integer>  list = new LinkedList();
+   int i =10;
+  list.add(i); // incorrect
+  list.add(new Integer(10));
+
+
+What is the use of wrapper classes, or why cannot I just use variables of primitive data types ?
+   Wrapper classes are used in collection framework,  collections don't accept  primitive variables in them
+
+
+String, StringBuffer, StringBuilder
+
+the above three classes used to work with strings
+
+
+STRING POOL, (string constant pool), what is it?
+  It is a part inside the HEAP memory, in which String class objects are exclusively stored
+
+
+We can create an object of  a String class using two possible syntaxes
+
+1. just like a primitive variable
+      String s1 ="Java";
+2. We can also create using the "new" operator
+
+   String s2 = new String("programming");
+
+String class objects created using the #1 approach are stored in STRING POOL, where as String class objects created using the#2 approach are stored on HEAP
+
+String literal: any free flowing text enclosed in "" is a String literal. e.g.  "hello" , "java"
+
+Everytime JVM notices a string literal, it creates an object of  the String class using approach 1 and then stores it in the string constant pool
+
+ String s1 = "Java";  //10
+   s1 = s1 + "programming"; //11
+
+ Java
+ Java Programming
+ Programming
+
+Objects of the String class are IMMUTABLE. which means, we cannot modify the content of a String class object after it is created, everytime , we try to modify, it creates a brand new object and stores it in the pool
+
+  toLoweCase()  toUpperCase()  equals() equalsIgnoreCase()   compareTo()
+ 
+ indexOf()  indexOf()  lastIndexOf()  lastIndexOf()   length()  charAt() 
+
+  substring()  startswith()  endswith()
+
+
+StringBuffer and StringBuilder. 
+These two are used to work with MUTABLE strings which means we can modify objects
+
+StringBuffer sb1 = new StringBuffer("hello");
+   sb1  = sb1.append(" world!");
+ 
+  insert, reverse, delete, 
+
+StringBuffer vs StringBuilder. 
+  Methods of StringBuffer are synchronized
+  Methods of StringBuilder are not synchronized
+
+Synchronized is a topic related to multithreading.
+
+
+     - .Object class
+    .Comparable interface
+    - .Class class
+    - .String, .StringBuffer, .StringBuilder classes
+    - .Integer, .Byte, Short, .Long, .Float, .Double, .Character, .Boolean wrapper classes
+
+Math ;  this class contains all "static" variables and methods
+
+NOTE. All classes/ interfaces of java.lang package are automatically imported into all .java files
+
+
+Method overriding WRT access specifiers
+In method overriding, the  overriding version cannot be more restrictive than its parent version
+
+e.g
+   class A {
+  private void m1() {  }
+  }
+  class B extends A {
+   protected void m1(){  }
+  }
+
+Exception Handling in Java.
+
+What is an Exception ?
+  It is a problem that occurs during the runtime (during the execution time) of a program
+
+When an exception occurs, the JVM terminates the program from that line which caused the exception.
+
+Exception handling. It is a way of telling the JVM to continue to program execution, by ignoring the exceptions that occur using some special syntax.
+
+ try and catch
+
+Every exception that occurs is considered as an object one special class.
+ 
+ AritmeticException,  NumberFormatException, ArrayIndexOutOfBoundsException
+	
+  IOException,  NullPointerException, ClassCastException, ClassNotFoundException, 
+ 
+ InterruptedException, SQLException
+
+
+Java Exception classes. These are the special classes related to exceptioni handling. 
+Anytime if some exception occurs, JVM creates an object of the suitable exception class and throws that object
+
+ int i  = 10/ 0;  ArithmeticException
+ int num[] = {1,2,3};
+   Sop(num[5]);  //   ArrayIndexOutofBoundsException
+
+
+Java Exception class hierarchy
+
+                               OutOfMemoryError    StackOverflowError
+
+
+The java.lang.Throwable is the super class of all exception related classes
+
+Throwable has two immediate subclassses,   Exception, Error
+
+ Problems related to application/coding fall into the category of Exception
+ Problems related to JRE like memory issues fall into the category of Error  
+
+ Exception class has a bunch of child classes.  e.g    IOException, SQLException, ClassNotFoundException, RuntimeException
+
+
+ RuntimeException has a bunch of child classes.  e.g  NullPointerException, ArrayIndexOutOfBoundsException, AritmeticException
+
+
+Java Exception handling related keywords.
+
+   try  catch  finally   throw   throws
+
+ Any code that we suspect to possibly cause an exception is placed inside a block of code surrounded by try eyword
+
+
+     try {
+      int i = 10*2;
+     int k = a/b;
+     int j = 1+2;
+     System.out.println("hello");
+     int i = Integer.parseInt("10 ");
+      System.out.println("world...");
+          System.out.println("hello world..");
+               Customer c1 = null;
+	String s1 = null;
+	c1.custid=101;
+	System.out.println(s1.length());	
+	System.out.println("java programm..");
+	int num[] = {1,2,3,4,5};
+	System.out.println(num[0]*2);
+	num[100] = 2;
+	System.out.println(num[1]+2);
+  }  catch(ArithmeticException    e) {
+           System.out.println(e);
+   }
+catch(NullPointerException    e) {
+           System.out.println(e);
+   }
+catch(ArrayIndexOutOfBoundsException    e) {
+           System.out.println(e);
+   }
+catch(NumberFormatException    e) {
+           System.out.println(e);
+   }
+ 
+
+When the program flow jumps from try to catch, then after catch block is completed, it will not go back to try 
+
+ 
+ 
+There can be more than one catch block for a try block..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+try  {
+  // line 1 of database code
+ // line 2 of database code          SQLException
+ // line 3 of database code
+
+} catch(Exception e) {
+     Exception e = new SQLException();
+   e.getErrorCode();
+}
+catch(SQLException e) {
+
+   e.getErrorCode();
+}
+
+     try {
+      int i = 10*2;
+     int k = a/b;
+     int j = 1+2;
+     System.out.println("hello");
+     int i = Integer.parseInt("10 ");
+      System.out.println("world...");
+          System.out.println("hello world..");
+               Customer c1 = null;
+	String s1 = null;
+	c1.custid=101;
+	System.out.println(s1.length());	
+	System.out.println("java programm..");
+	int num[] = {1,2,3,4,5};
+	System.out.println(num[0]*2);
+	num[100] = 2;
+	System.out.println(num[1]+2);
+  }  catch(ArithmeticException | ArrayIndexOutOfBoundsException 
+| NullPointerException | ...    e) {
+           System.out.println(e);
+   }
+
+ 
+the finally block. 
+   It is placed after the catch block and it is used to contain the code that releases the resources if opened any inside the try block
+
+ try {
+    // some code here opens a file
+    // some code here opens a DB connection
+  } catch(ArithmeticException e) {
+
+  }   
+
+    // the code here closes the file that is opened in try block
+    // the code here closes the DB connection that is opened in try vlock
+
+
+Creating a user-defined exception class (creating a custom exception)
+
+To create our own exception class , we should define a class that extends any of the exception classes
+
+ e.g.
+
+    class TestException extends Exception {
+
+   }
+
+  class TestException2  extends RuntimeException {
+
+  }
+
+  class TestException3 extends TestException {
+
+  }
+
+  class TestException4 extends  NullPointerException {
+
+  }
+
+All built in exceptions are thrown by JVM.
+
+Apart from this we can explicitly throw our own defined exceptions
+
+the "throw" keyword.  It is used to throw an exception wantedly
+
+throw exception-object;   // where exception-object is an object of any exception class
+
+e.g.
+
+   throw new NullPointerException();
+
+   ArithmeticException e = new ArithmeticException(); 
+   throw e;
+
+public class InSuffcientFundsException extends Exception {
+  // some reasonable code here
+ }
+
+public class BankingOperations {
+ 
+  public void deposit(int actNumber, double  howMuch) {
+
+  }
+
+   public void withdraw(int actNumber, double howMuch) {
+     
+          throw new InSuffcientFundsException();
+     
+   }
+
+}
+
+
+
+public class Test {
+
+   public static void goodAfterNoon()  {
+     // some code here which causes an ArithmeticException
+   
+  }
+
+  public static void goodMorning() {
+ 	
+   }
+
+
+  public static void goodEvening() {
+
+   }
+
+    public static void main(String args[]) {
+         
+   }
+
+}
+
+There are two types of types exceptions 
+
+  1.  those which are under the control of the programmer   e.g   /0  invalid array index, null 
+ 2. those which are beyond control of the programmer
+
+unchecked exceptions. An unchecked exception is that one where the compiler won't check whether tthe programmer is surrounding a piece of code causing an exception which is fixable  by him/her
+
+checked exceptions represent those problems which are beyond the control of the programmer. If we don't use the surrounding try catch for the code related to checked exception, then the compiler won't compile that code
+
+The compiler checks for such code whether we have used the surrounding try..catch , and there fore they are called as echecked exceptions
+
+ int i =10/1;  
+  String s1 = null;
+ int x =    s1.length();
+
+ try {
+    FileReader fr = new FileReader("hello.txt") 
+   } catch(FileNotFoundException e) {
+             fr =  new FileReader("the same file name in a different computer")
+    }
+ try {
+     DriverManager.getConnection("the database computers IP address", "username" , "password");
+ } catch(SQLException e) {  }
+ 
+ what if...not.. exists.. not turning
+
+
+All IMMEDIATE subclasses of the Exception class  at any depth down the line (Except  RuntimeException class and its children) belong to the checked exception category
+
+
+
+public class InSuffcientFundsException extends Exception {
+  // some reasonable code here
+ }
+
+public class BankingOperations {
+ 
+  public void deposit(int actNumber, double  howMuch) {
+
+  }
+
+   public void withdraw(int actNumber, double howMuch)  throws InSufficinetFundsException {
+     if(howMuch > actNumber.getBalance()) {
+        	
+	  throw new InSuffcientFundsException();
+             
+     }
+     
+
+  public static void main(String argsp[])  throws InSufficientFundsEception  {
+    	
+    new BankingOperations().withdraw(1234, 1000);
+  
+  }
+   }
+
+}
+
+For any code that causes a checked exception, we have to follow one of the following rules
+ 1.  EITHER we have to use a surround try ..catch block for that checked exception
+ 2. OR, we have indicate that problem in the method's declaration using the "throws" keyword , so that the callers of the method are informed about the problem
+
+_______________________________________________________________
+DAY 8 - 31/AUG/2022
+
+Define the following custom exception classes and demonstrate the code to throw in appropriate situateion
+
+1.  EmployeeNotFoundException
+2.  InvalidUsernameException
+3. InvalidCardException
+
+To demonstrate the EmployeeNotFoundException, use the following usecase
+
+  1. Employee.java (empid, empname,salary)
+  2. EmployeeDataStore.java (Inside an array,store employee objects)
+      e.g
+               public static  Employee e[] =  {
+		 new Employee(101,"Scott",5000),
+		 new Employee(101,"Scott",5000),
+		 new Employee(101,"Scott",5000),
+		 new Employee(101,"Scott",5000),
+		 new Employee(101,"Scot",5000),			
+		}
+https://www.somesite/com/api/employee/101
+  3. EmployeeDAO.java (interface)
+       public abstract Employee findEmployee(int empid) throws EmployeeNotFoundException;
+       public abstract void showAllEmployees();
+       public abstract int getEmpSalary(String empname);
+      public abstract void updateEmployeeName(int empid, String newName) throws EmployeeNotFoundException;
+      public abstract void updateEmployeeSalary(int empid, int newSalary) throws EmployeeNotFoundException;
+
+  4. EmployeeDAOImpl.java implements EmployeeDAO
+      this java code provides the logic implementation for the EmployeeDAO interface
+  5.EmployeeService.java  (interface) : this interface contains exactly the same methods of the EmployeeDAO.java
+
+     public abstract Employee findEmployee(int empid) throws EmployeeNotFoundException;
+       public abstract void showAllEmployees();
+       public abstract int getEmpSalary(String empname);
+      public abstract void updateEmployeeName(int empid, String newName) throws EmployeeNotFoundException;
+      public abstract void updateEmployeeSalary(int empid, int newSalary) throws EmployeeNotFoundException;
+
+ 6. EmployeeServiceImpl.java  implements EmployeeService
+     // 
+
+
+
+
+
+
+
+
+
+
+
+2.  Develop one case study to demonstrate the Hotel room reservation it should support the following features
+           a.  Display a list of rooms with the details as follows
+                   serial.num    hotel name    room-type   cost-per-day  availability 
+                       1               Hotel-1         standard       50             yes
+                       1               Hotel-1         standard       50             yes
+
+
+            User-Menu
+             1. Book hotel
+             2.Exit
+            
+              Please enter your choice: 1
+ 
+              Please enter customer details:
+                Customer Name:
+                No of persons:
+                Contact number:
+        
+
+ A service class is something which provides the abstraction for any kind of service
+
+e.g
+
+
+ com.ems.dao
+ public interface   EmployeeDAO {
+
+  }  
+
+ public class EmployeeDAOMySQL implements EmployeeDAO{
+
+  }
+
+ public class EmployeeDAOMongoDB  implements EmployeeDAO{
+
+  }
+
+ public class EmployeeDAOArrayStore implements EmployeeDAO{
+
+  }
+
+
+com.ems.service
+ public interface   EmployeeService {
+  // as of now this one contains exactly the same methods of the DAO interface
+   // however, this interface is not restricted or not limited to contain ONLY the methods of DAO interface
+  // but it can also contains any additional methods as needed which will be known during the time the 
+ // project evolves
+ // sending an email-acknowledgement
+   public void sendEmail(String toEmailId);
+  }
+
+  public class EmployeeServiceImpl 
+   // will create an object of DAO
+ EmployeeDAO edao = new EmployeeDAOArrayStore();
+   public void sendEmail(String toEmailId) {
+  // send email using Gmail server, hotmail server
+   }
+ }
+
+
+
+
+public class TestException extends EmpNotFoundException {
+
+}
+
+public class OtherException extends Exception {
+
+}
+public interface A {
+   public void test() throws {
+    }
+}
+public class B extends A {
+   public void test() throws TestException {
+
+    }
+}
+
+________________________________________________________________
+day 9 01/SEP/2022
+
+Method overriding and "throws" 
+
+In method overriding, a child version cannot throw broader checked exceptions other than it's parent, 
+
+A child version can throw  (means can declare in it's "throws")  
+  (i) the same exception as it's parent version
+  (ii) none
+ (iii) the child class of the exception declared in the parent version
+
+JAVA MULTITHREADING
+
+What is mutltithreading?
+  It is a way in which different parts of the same progam are executed concurrently* by the execution environment
+
+
+  public class Test {
+    public static void main(String args[]) {
+   m1();
+  }
+
+   public static void m1() {
+    m2();
+   }
+
+  public static void m2() {
+  m3();
+  }
+
+  public static void m3() {
+
+  }
+ 
+
+ }
+
+
+Java provides the facilities to created multithreaded programs
+
+What is a Thread ?
+  It is a memory stack on which the code is loaded and executed.
+
+Creating threads in java is possible by creating an object of a built in class "java.lang.Thread"  or sub class of it
+
+Thread t1 = new Thread();
+
+Thread t2 = new Thread();
+
+The java.lang.Thread class.    This class is used to create new threads,
+
+There are various methods that this class offers to work with threads
+
+  Thread()
+  Thread(String threadName)
+  Thread(Runnable r)
+  start()
+  run()
+  sleep() 
+ 
+  Working with creating multithreaded program invovles the following steps
+ 
+1. Create a class that either extends the java.lang.Thread class and override the run() method in that class
+                  or
+      create a class that implements the java.lang.Runnable interface and override the run() method in that class
+
+
+2. Create an object of the class created in step-1 
+
+3.  invoke the start() method on the object created in step-2
+
+4. now the start() method internally makes an implicit call to the run() method, by loading the code of the run() method on to the thread (memory stack) that is created when step 2 is executed
+
+
+Multithreading use cases
+ (i) server development
+ (ii) gaming applications
+ 
+
+Classes and interfaces related to Thread programming Java
+
+ Thread class
+ Runnable interface
+ ExecutorFramework : It is a bunch of classes/interfaces for with more facilities
+ Future
+ Join/Fork framework:
+
+
+
+class CircleThread extends Thread {
+   public void run() {
+   // logic to print the area of circle
+   }
+}
+class SquareThread extends Thread {
+   public void run() {
+   // logic to print the area of square
+   }
+}
+class RectangleThread extends Thread {
+   public void run() {
+   // logic to print the area of Rectanlge
+   }
+}
+
+public class Main {
+    main(....) {
+   new CircleThread().start();
+   new SquareThread().start();
+  }
+}
+
+class CircleThread implements Runnable{
+   public void run() {
+   // logic to print the area of circle
+   }
+}
+
+class SquareThread implements Runnable{
+   public void run() {
+   // logic to print the area of square
+   }
+}
+
+class Rectanlge Thread implements Runnable{
+   public void run() {
+   // logic to print the area of rectangle
+   }
+}
+
+
+class Main {
+  p s v m (...) {
+    new Thread(new CircleThread()) .start();
+  }
+}
+
+
+the sleep() method.  It is used to purposely pause a thread's execution for some specified time
+
+  public static void sleep(long milliseconds) throws InterruptedException
+
+Thread life cycle and different states of  a thread
+
+NEW 
+READY-TO-RUN (RUNNABLE)   (waiting for JVM to pick its code and run)
+RUNNING   (jvm is actually running its code currently)
+PAUSE/BLOCK/WAIT  
+DEAD
+
+
+the currentThread() method. This method returns a pointer to the current thread
+
+Thread.currentThread();
+
+Thread priority: It is a integer given each thread that is loaded into memory.
+Thread priority is used by the JVM to decide which thread to give the priority to execute code
+The higher the priority , the higher the JVM chance to run it
+
+The PRIRIOTY RANGE CAN BE  between 1 and 10  (including 1 and 10)
+
+More than one thread can have the same priority, in this case, the JVM chance is given in a round robin fashion
+
+The thread class has a few constants related to priority called
+
+  Thread.MAX_PRIORITY =10
+  Thread.MIN_PRIORITY= 1
+  Thread.NORM_PRIORITY = 5;
+
+The thread class provides to  change or to read the priority of thread
+
+  t.setPriority(5);
+  t.getPriority();
+
+t.getName() t.setName()
+
+Thread synchronization. It is way to solve or overcome race condition
+
+What is race condition?
+  It is the situation in which more than one thread tries to access the code the same object concurrently (we can also say this as,  a situation in which more than one thread tries to access a shared resource concurrently)
+
+
+Every object loaded into memory has a MUTEX (Mutually Exclusive ) lock with it
+
+We can synchronize other object's code by simplying using that object in a synchronized() block syntax
+
+ e.g
+   BankAccount b1 = new BankAccount();
+    synchronized(b1)  {
+       // some code here
+   //e.g b1.withdraw(100);
+
+  }
+
+
+When a thread starts working with a synchronized code on an object, then it applies lock on all synchronized code of that object
+
+wait() method. It releases the lock temporarily , (the lock that it acquired)
+notify() method. it nofities the wait() ing method, to require the lock
+notifyAll(). notifies all wait() ing threads
+
+the above methods can be called/used ONLY FROM INSIDE a "synchronized" code 
+
+
+PRODUCER-CONSUMER PROBLEM
+
+flag = false
+i =0;
+producer has no lock
+consumer has no lock
+producer started run() method
+    while(true) {
+     q.put(i++);   
+}
+
+ put() started running when i is 0
+flag changed to true
+produced 1
+
+__________________________________________________________________________________________________
+DAY 10 02/SEP/2022
+
+ExectutorFramework.   It is a group of classes and interfaces which are used to work group of threads easily
+
+java Callable and java Future : These are used generally when working with executor framework
+
+Callable is an interface which is same as Runnable, with one difference that the Callable's methoed call() returns the computed value where as Runnable's method  run() does not return a value
+
+Future holds an object reference to a value that will be produced at some time in future.  The code that produces the object at some time in future is an asynchornous operation
+
+  Future<Employee>  empid = ... some code here which will connect a remote database and fetches the empid
+
+      greetGoodMorning();
+     Future<boolean>   future = fillWater(); 40 mins
+      gotoGrocery();
+      greetGoodEvening();
+
+   // may be a 20 lines later. I need the value of future...
+ 
+	if(future.isDone() )
+            temp = future.get();
+
+The ExecutorService : This is a service that points to bunch of threads to which we can submit takss using Callable or Runnable and get the results as applicable by Future<T>
+ 
+ e.s
+    ExecutorService es1 = Executors.newFixedThreadPool(3);
+        Future<Integer> f1 = es1.submit(new IntegerCallable());
+      System.out.println(f1.get());
+
+
+
+JAVA IO STREAMS AND FILES
+
+The word stream has a different meaning based on the situation it is discussed in.
+ 
+  if it is WRT java io  then a stream is a collection memory cells which acts as a data source for input and output destination
+
+  if it is WRT java 8 features, then a stream is a collection of data items (may be object of Employee, Customer) which are processed  using a convenient syntactical way ratherthan the class for loop
+
+FileInputStream   fin  = new FileInputStream("hello");
+
+File : this is a class that include a bunch of methods related to created/deleting files and directories and also  reading the file information such as file operation permissions
+
+Java Collection api  - It is a bunch of interfaces and classes  that come in some packages
+ These classes and interfaces allow to work easily with  various data structure models such as doubly linked lists, binary trees, hashing, dynamic arrays
+
+C++ STL
+
+C pointers and data structures
+
+
+REST context
+
+Programming 
+ api (appication programming interface)
+
+
+  Iterable ->   Collection ->  List ->  LinkedList, ArrayList, Vector
+
+ Iterable -> Collection -> Set  ->   TreeSet, HashSet, LinkedHashSet
+
+LinkedList list  = new LinkedList();
+
+TreeSet set = new TreeSet();
+
+HashSet set1   = new HashSet();
+
+ArrayList  list1 = new ArrayList();
+
+
+ list.add()
+ set.add()
+  set1.add()
+  list1.add()
+
+  A      10 20 30 
+
+ B    10 20 30 40 50 60
+
+  a.retainall(b)
+
+What is a  collection ?
+  It is a group of objects.   e.g  A group of integers, strings, Customers, Employees
+
+Collections are of two types
+  (i) generic collections : which contain same type of objects like all strings, all students, all customers
+ (ii) non generic collections : which contain different type of object like a mix of strings, integer, customer, student
+
+
+   List list1 = new LinkedList(); // non generic way of doing, where we are not mentioning the type that we want to store in
+
+   List<String> list2 = new LinkedList<String>(); // generic way of doing.
+
+
+ Data items (objects) stored in a TreeSet are automatically sorted, because TreeSet is a SortedSet
+
+ 
+ One very IMPORTANT thing about TreeSet is, if we want to store any object in TreeSet, then the class of that object MUST implement the  java.lang.Comparable<T> interface
+
+Because, TreeSet internally runs the compareTo() method in a loop kind of array sorting loop to sort the elements stored in it
+ 
+  for(int i=0;i<products.length;i++) {
+ if(products[i].compareTo(products[i+1) {
+      // code to shuffle  goes here
+   }
+  }
+
+CTRL + shitft + t
+
+Whereever there is a word Hash in  a class name then it means it makes use of hashCode() and equals() method as applicable
+             HashSet LinkedHashSet 
+add()
+remove()
+contains()
+isEmpty()
+clear()
+size()
+
+
+The contains() method. of the  java.util.Collection interface is used to find an object in a given collection. and the finding logic is different for different collections
+  
+ TreeSet  makes use of compareTo() method to search an object that we want.
+ HashSet, LinkedHashSet makes use of both hashCode() and equals() method to search an object
+ any List imlementation like ArrayList, LinkedList makes use of equals() method to search an object
+
+
+The remove() method, of the java.util.Collection interface, is used to remove an object from a collection and works the same way of the contains() method across various classes
+
+ITERATING ACROSS THE ELEMENTS OF A COLLECTION
+  This can be done using one of the following ways
+  (i) using the Iterator interface methods
+ (ii) using the enhanced.. for loop
+ (iii) (from Java 8) using the forEach() 
+
+the  Iterator interface.   it has various methods that allow us to move to the next element in a collection, to remove it
+ 
+boolean  hasNext()
+Object next()
+remove()
+
+ 
+
+   Iterator<type> itr = collecttionobject.iterator();
+
+the forEach() method of the Iterable interface. It takes a  java.util.function.Consumer<T> object and apply() ies the logic given to it on each object of the collection
+
+    e.g collectioname.forEach(System.out::println);
+
+
+List vs Set collection
+   Sets do not allow duplicate elements where as List allows
+   Lists have more additional support called index based operations, sets do not have the index based operations
+
+  indexOf(Object ob)    get(index)  set(index, newObject)   remove(index)
+____________________________________________________________________________________________
+DAY 11 05-SEP-2022
+
+There are various ways to create a collection for e.g.
+
+ We can create an empty collection of any type like ArrayList, LinkedList, TreeSet, HashSet
+
+ArrayList list1 = new ArrayList();
+
+How do you create a LinkedList from an exisiting ArrayList ?
+
+LinkedList list2 = new LinkedList(list1);
+
+
+Arrays, Collections
+
+
+The java.util.Arrays class has a bunch of static methods related to standarad array operations like sorting, searching.
+
+One of the methods of the Arrays class is asList() which is used to create List
+
+e.g.
+  LinkedList  list3 = Arrays.asList(10,20,30);
+
+The Collections class.  
+ This class contains many utitily methods  sort(), unmodifiableList(), unmodifiableSet(), synchronizedList(array-list), synchronizedMap()
+ 
+ LinkedList list4  = Collections.unmodifiableList(list3);
+
+LinkedList list5 = Collections.synchronizedList(list3);
+
+The java.util.Comparator interface.   This interface has a method compare(object1, object2). This method is similar to compareTo() method of Comparable interface.
+
+In otherwords, we have to items to apply sorting logic.
+   1. java.lang.Comparable ->   int compareTo(Object ob)
+   2.  java.util.Comparator ->    int compare(Object ob1, Object ob2);
+
+The java.util.Enumeration interface. It is same like Iterator interface, but used to work with collection like Vector
+
+Vector vs ArrayList  :  both of these collections allow to work with dynamic arrays
+
+Vector methods are synchronized whereas ArrayList methods are not synchronized
+
+Vector is thread-safe  whereas ArrayList is NOT threadsafe
+
+
+ ArrayList<Integer> al  = new ArrayList<>();
+synchronized(this) {
+   // your code on the array list  "al" goes here in a thread saftety manner
+ }
+
+The List interface has addtional methods, one among those is   listIterator() which returns a ListIterator interface object
+
+The ListIterator is the child interface of the Iterator interface,  and it has additional methods which allow to traverse the List in backward direction also
+
+List<Integer> intList = Arrays.asList(10,20,30,40,50);
+
+  ListIterator<Integer> litr =  intList.listIterator();
+
+    while(litr.hasNext()) {
+    System.out.print(litr.next() +" ");
+   } 
+
+   while(litr.hasPrevious() ) {
+    System.out.print(litr.previous()+" ");
+  }
+
+List vs Set :   Lists allow duplicate elements whereas Sets do not allow
+
+Types of collections  based on their internal storage logic/model
+
+ORDERDED COLLECTIONS.   These type of collections store the elements given to them in INSERTION ORDER.
+ All java.util.List implementations like ArrayList, LinkedList are all ORDERED COLLECTIONS
+
+SORTED COLLECTIONS. These are the ones which store the elements given to them in SORTED ORDER 
+  TreeSet is the sorted collection
+
+UN-ORDERED and UN-SORTED COLLECTIONS. These are the ones which NEITHER store the elements in SORTED form NOR in ORDERED form
+ 
+ Anything whose name has "Hash" is an UNORDERED and UNSORTED collection
+
+
+
+Map  in java.   A map is an object which stores data in terms of KEY-VALUE pairs
+
+
+Examples of Map related classes in java.util are
+
+   HashMap, TreeMap,  Hashtable,  LinkedHashMap
+
+   Map m = new HashMap();
+
+  m.put("Java","serverside");
+ m.put("Angular","Frontend");
+
+
+ Map<Product,Vendor>  prodVendMap = new TreeMap<Product,Vendor>();
+
+   prodVendMap.put(new Product(,,,,), new Vendor(,,,) );
+   prodVendMap.put(new Product(,,,,), new Vendor(,,,) );
+
+ Each combination of KEY and VALUE of a given map is called an entry.
+ 
+ entry is an object of an interface called Entry 
+
+ Entry is a nested interface of the Map interface
+
+ Map.Entry e = 
+
+  
+
+  public class Employee {
+    empid;
+    empname;
+ }
+
+
+ public class Project {
+     projid; 
+    projname; 
+ }
+
+ Remove implements Comparable,  remove @overiide compareTo() method from Employee.java 
+  Change the Map object to TreeMap in the main()
+
+All Hash* maps store their entries based on the hashCode() of the KEYs
+
+The TreeMap stores it's entries based on the  Comparable.compareTo() of the KEYs, which means, it is compulsory for that class to implement the Comparable interface whose objects we want to use as a KEY in a TreeMap
+
+HashMap vs Hashtable:
+
+HashMap allows,  null for both key and value.   If we use null for key and/or value then it does not cause any compilation failure or runtime failure
+
+Hashtable DOES NOT allow null for either key or value.  If we use a null for either key or value, then it results in a runtime failure of NullPointerException
+
+TreeMap DOES NOT allow null key but value
+
+HashMap vs LinkedHashMap:  The difference between these two is same as the difference between HashSet and LinkedHashSet
+
+
+ public class Customer {
+     private int custid;
+     private String custname;
+  }
+
+ public interface CustomerDAO {
+   public void addRecord(Customer c); 
+   public Customer findCustomer(int custid) throws CustomerNotFoundException;
+   public  List<Customer>   getAllCustomerRecords();
+   public void updateCustomer(Customer newCustomer, int custid);
+   public void deleteCustomer(int custid);  
+ }
+
+ public class ListCustomerDAO implements  CustomerDAO {
+ // all implementation goes here
+ // take any List such as LinkedList or ArrayList, to store/read/delete/update Customer objects
+ }
+
+
+ public interface CustomerService {
+   public void addRecord(Customer c); 
+   public Customer findCustomer(int custid) throws CustomerNotFoundException;
+   public  List<Customer>   getAllCustomerRecords();
+   public void updateCustomer(Customer newCustomer, int custid);
+   public void deleteCustomer(int custid);  
+ }
+
+  public class CustomerServiceImpl implements  CustomerService{
+ // wrapping of DAOImpl call goes here
+ // override all methods and all the methods on the dao impl object
+ }
+
+ public class CustomerNotFoundException extends Exception {
+   int custid; //  getters/setters/constructors/toString
+ }
+
+public class CustomerCRUDMain {
+public static CustomerService service =new CustomerServiceIm
+  public static void main(String args[]) {
+            demonsrateAddTask();
+           
+   }
+
+  public static void demonsrateAddTask() {
+  
+     service.adRecord(new Customer(1,"A"));
+ }
+
+  public static void demonsrateUpdateTask() {
+      Customer newCustomer = new Customer(oldId, "new name");;
+     service.updateRecord(oldId, new Customer);
+  
+    
+ }
+
+
+}
+
+
+public interface Test {
+  public void m1();
+  public int m1();
+  public String m1();
+}
+
+public class A implements Test {
+  public int m1() { // some code  }
+}
+
+public class B implements Test {
+  public String m1() {  // some code}
+}
+
+public class MainTest {
+  public static void main(String args[]) {
+   Test t1 = new A();
+    int x = t1.m1();
+    Test t2 = new B();
+  String y = t2.m1();
+ }
+}
+
+
+ List  x = getData();
+
+  Iterator itr = x. iterator();
+
+   while(itr.hasNext()) {
+       if(itr.next() instanceof Emloyee) {
+
+    }
+
+  
+
+
+  }
+
+public List<? extends Empl   getData() {
+    List temp  = null;   
+  if(type.equals("permanent")) {
+         temp  = Arrays.asList(new PermanentEmployee(), new PermanentEmployee());
+    }  else  {
+         temp  = Arrays.asList(new ContracttEmployee(), new ContractEmployee());    
+    }
+  
+    return temp;
+}
+
+
+____________________________________________________________________
+day 12 7th-sep-2022
+
+Functional interface: 
+ An interface with a single abstract method is called a functional interface.
+  A fucntional interface MUST contain ONE  (and ONLY one) abstract method.
+   In otherwords,  A functional interface CANNOT contain zero ABSTRACT METHODS or more than abstract method
+
+@FunctionalInterface
+public interface Greeting {
+public abstract void greetHello(String name);
+}
+
+pulic class TestGreeting implements Greeting {
+public void greetHello(String name) {
+  System.out.println("hello.. welcome to functional interfaces.." + name);
+ }
+
+}
+
+public class TestMain {
+  public static void main(String args[]) {
+    Greeting greeting = new TestGreeting();
+     greeting.greetHello("Scott");
+ }
+
+}
+
+Lambda expression.  It is an expression that provides a shortcut syntax to implement a functional interface
+
+ Functional interface name  ref = (param1,param2,..) -> {   body of the method }  ;
+
+  Greeting g1 = (String name) -> { System.out.println("hello " + name); }
+   g1.greetHello("Scott");
+
+ Datatypes are optional in the lambda expression
+ If there is ONLY one parameter in the lambda expression, then  () sign is optional
+ If the  lambda expression body contains a single statement then   { } are optional
+ If the lambda expression body contains a single statement, and if that statement is supposed to return the value, then we omit the return keyword, just in case we omit the  {  }
+We can pass the lambda expression to  a method as a parameter,
+
+
+ public interface Runnable {
+    public void run();
+ }
+
+  public class TestRunnable implements Runnable {
+   public void run() {
+  System.out.println("hello ");
+   }
+ }
+
+ public class Main1 {
+   public static void main(String args[]){
+      Runnable r = new TestRunnable();
+     Thread t1 = new Thread(r);
+
+    Thread t3 = new Thread3(lambda for Runnable here)
+    t1.start();
+  }
+ }
+
+Method reference: This is even more shortcut syntax available for use, if a lambda expression contains a single statment,  and if that single statement is a method call (and if the number parameters and their datatypes match with the number of parameters and data types of the method which is called inside the body of the lambdaexpression)
+
+
+interface A {
+   void m1(int i);
+}
+
+  A x = (i)->{System.out.println(i)};
+
+ A x = System.out::println;
+
+
+The Optional class  : This class with its  constructors and methods provides and alternative way of handling null condition checks
+
+
+  String s1 = null;
+  int i =  0;
+   if(s1 != null) {
+       i = s1.length();  
+  }
+
+ Optional<Integer>  op = Optional.empty()
+Optional<Integer> op1 =  Optional.of(10);
+	Optional<Integer> op2 =  Optional.empty();
+	Optional<Integer> op3 =  Optional.empty();
+	
+	//int x = op2.get();
+	int y = op1.orElse(200);
+	
+	System.out.println(y);
+	
+	if(op1.isPresent()) {
+		// some code here
+	} else {
+		// some code here
+	}
+ 
+
+The built in functional interfaces.
+
+Consumer interface -  void accept(T t)
+Function interface - T apply(U )
+Predicate interface -  boolean test(T t)
+Supplier interface
+
+
+Streams in Java 8
+
+ A stream in Java8 (and later version) is  a sequence of objects upon which we can execute a series of operations such as sorting, averaging, summing, filtering, printing, counting, 
+
+
+e.g.  A sequence of Product class objects,   filter all products whose price is > X, sort all filtered Products,  change the freeShipMent status to true,  print the final products
+
+
+Stream operations.  These are the methods (code) which we execute on a stream
+
+ e.g.   map()  filter()  sort()  sum() count()  forEach()  findFirst()
+
+Type of operatrions:    terminal operations  & intermediate 
+
+10 product  filter()  5products
+
+Streams creation 
+   Streams can be created using different ways.
+   We can create a Stream from a collection, from an array,  by using Stream.of()...
+
+
+
+sorted()  skip()  sum() count()  on IntStream
+
+__________________________________________________________________________________
+DAY 13 08-SEP-2022
+
+ 
+Product.java
+     prodid, prodname
+    1. To create a List of product objects 
+    2.  Create a Stream from the prodList
+              prodList.stream()
+    3.translate all prod names to uppercase ( map() operations)
+    4. filter all products that start with 'S'
+   5. print
+
+  
+
+
+   prodList
+	.stream()
+	.map( p-> {
+                          Product temp=p;
+                          temp.setName(temp.getName().toIUpperCase());
+                         return temp;
+                 })
+              .filter(p->p.getName().startsWith("S"))
+              .forEach(System.out::println)
+	
+   prodList
+	.stream()
+	.map( p-> {
+                          Product temp=p;
+                          temp.setName(temp.getName().toIUpperCase());
+                         return temp;
+                 })
+              .filter(p->p.getName().startsWith("S"))
+              .forEach(p->System.out.println(p.getProdId()+":"+p.getProdName())
+
+	.map(ProductUtility::findProduct)
+              .map(prodId->ProductUtility.findProduct(prodId))
+
+  
+MYSQL
+UNIT TESTING JDBC (Java Database Connectivity)
+
+
+
+A database is a collection of various objects such as
+  (i) tables
+ (ii) views
+ (iii) indexes  / indices
+ (iv) stored procedures
+ (v) stored functions
+ (vi) and many more like USERS, SCHEMAS
+ 
+SHOW DATABASES;
+
+CREATE DATABASE database-name;
+
+CREATE DATABASE sample;
+
+SHOW DATABASES;
+
+DROP DATBASE sample;
+
+USE DATABASE database-name;   This command will open a database, that we can work after it is opened
+
+USE mysql;
+
+SHOW TABLES;
+
+CREATE TABLE  table-name(
+column-name  datatype(width),
+column-name  datatype(width),
+);
+
+CREATE TABLE student(
+student_id INT(4),
+student_name VARCHAR(20),
+city CHAR(20),
+age INT(4)
+);
+
+
+DESCRIBE table-name;
+
+DESC table-name;
+
+DESCRIBE student;
+
+
+ALTER TABLE table-name  ADD (
+ column-name type(width),
+ column-name type(width),
+)
+
+ALTER TABLE student ADD (
+city VARCHAR(20),
+marks INT(4)
+);
+
+
+ALTER TABLE table-name  MODIFTY COLUMN  column-name type(width);
+
+
+ALTER TABLE student MODIFY COLUMN city VARCHAR(10) ;
+
+ALTER TABLE table-name DROP COLUMN city;
+
+ALTER TABLE table-name RENAME TO new-table-name;
+
+ALTER TABLE student RENAME TO student-details;
+
+
+DROP TABLE table-name; 
+
+DROP TABLE student_details;
+
+
+CREATE, ALTER, DROP  (DDL - Data Definition Language commands)
+
+1. DDL commands : These are used to define the tables and other stucgtures such as views, indexes
+
+2. DML :  Data Manipulation Language.  INSERT, UPDATE, DELETE
+
+3. DQL:   SELECT
+
+4. TCL : Transaction Control Language.  COMMIT  ROLLBACK
+__________________________________________________________________________
+
+DAY 14 9TH-SEP-2022
+
+Java 8 interfaces support two additional type of methods other than abstract methods
+ (i)  default methods
+ (ii) static methods
+
+eg  interface Test {
+     public static void m1() {  
+   System.out.println("static methods!");   
+}
+   public default void m2() {
+  System.out.println("This is a default method");
+ }
+ }
+
+
+1. CREATE DATABASE sample;
+2. USE sample;
+3. SHOW TABLES;
+4. CONSTRAINTS  IN MYSQL
+   Constraints are rules (or restrictions) that we can apply on columns of a table while creating a table
+   Constraints are used to restrict the data with some conditions when we perform INSERT/UPDATE/DELETE operations on records of a table
+
+   CREATE TABLE student(
+    student_id INT(4) PRIMARY KEY,
+    student_name VARCHAR(20) NOT NULL,
+    CONSTRAINT cons-name 	CHECK(student_name like '%S')
+    
+  ) 
+
+   INSERT INTO student VALUES (null,'scott');
+   INSERT INTO student VALUES (101,null);
+   INSERT INTO student VALUES (null,null);
+  INSERT INTO student VALUES (101,'Scott');
+  INSERT INTO student VALUES (101,'Scott');
+  
+  Almost all database servers support the following constraints
+ 1. PRIMARY KEY : This constraint does not allow null and duplicate values for a column
+ 2.  UNIQUE: this constraint does not allow duplicate value for more than one record/row. this allows null
+ 3. NOT NULL: this constraint does not allow null
+4. CHECK : this constraint is used to apply some condition such as price>100  name starts with S
+5. FOREIGN KEY: this constraint is used to apply parent child relationship between two tables
+
+
+1. CREATE TABLE student(
+    student_id INT(4) PRIMARY KEY,
+    student_name VARCHAR(20) NOT NULL,
+    age  INT(4) CHECK (age >10),
+    passport INT(10) UNIQUE );
+
+DESC information_schema.table_constraints;
+SELECT * FROM information_schema.table_constraints WHERE table_name ='student'
+2. ALTER TABLE table-name DROP CONSTRAINT constraint_name;
+ALTER TABLE student DROP CONSTRAINT passport;
+   
+
+* ALL DATABASE SERVERS HAVE A LOT OF BUILT IN TABLES IN WHICH THEY STORE AND MAINTAIN SOME INFORMATION.
+* ALL BUILT IN DATABASE TABLES ARE TECHNICALLY CALLED AS "DATA DICTIONARY"
+
+  INFORMATION_SCHEMA.TABLE_CONSTRAINTS
+
+A schema is a collection of  views, tables, indices, procedures, functions.
+
+DESC information_schema.table_constraints;
+
+SELECT * FROM information_schema.table_constraints WHERE table_name ='student'
+
+ALTER TABLE student DROP CONSTRAINT constraint-name;
+
+SELECT constraint_name, constraint_type FROM information_schema.table_constraints WHERE table_name='student';
+
+INSERT INTO student VALUES(102,'Scott',20,12345);
+1. CREATE TABLE student(
+    student_id INT(4) PRIMARY KEY,
+    student_name VARCHAR(20) NOT NULL,
+    age  INT(4) CHECK (age >10),
+    passport INT(10) UNIQUE);
+
+2.CREATE TABLE college (
+ college_id INT(4) PRIMARY KEY,
+ college_name VARCHAR(20) NOT NULL
+)
+
+ALTER TABLE student ADD (college_id  INT(4) );
+
+ALTER TABLE student
+ADD FOREIGN KEY (college_id) REFERENCES college(college_id);
+
+INSERT INTO college VALUES (201,'College-1');
+
+INSERT INTO student VALUES(104,'Guest',20,4321,201);
+
+SELECT * FROM college ;
+
+SELECT * FROM student;
+
+
+PROCEDURES/FUNCTIONS (CREATE FUNCTION / CREATE PROCEDURE)
+
+DELETE FROM student;
+
+DELETE FROM college;
+
+THE DML Commands
+    INSERT, UPDATE, DELETE
+
+the INSERT command : it is used to add records (to insert records) into the table;
+
+   INSERT INTO table-name 
+            (col-name1, colname2, colname3, .... colnameN)   
+  VALUES 
+           (val-for-col1, val-for-col2,val-col3..val-for-colN);
+
+ INSERT INTO table-name 
+            VALUES 
+           (val-for-col1, val-for-col2,val-col3..val-for-colN);
+
+NOTES. We can skip mentioning the "col-names" in case we add/insert data into all columns.  However, if we omit the "col-names" clause then we must ENSURE that the values that we supply in the values(....) clause must match the column-sequence that we used while creating the table with CREATE TABLE command
+
+ colnames are must if we insert data into few columns only
+
+
+INSERT INTO college 
+	(college_id, college_name)
+VALUES (201, 'College-1');
+
+
+INSERT INTO college
+VALUES (202, 'College-2');
+
+INSERT INTO college
+VALUES (203, 'College-3');
+
+INSERT INTO college
+VALUES (204, 'College-4');
+
+INSERT INTO college
+VALUES (205, 'College-5');
+
+
+INSERT INTO student 
+       (student_id, student_name, age,passport,college_id)
+VALUES
+    (101,'Scott',15,1234,201);
+
+INSERT INTO student 
+    VALUES
+    (102,'Smith',15,4321,201);
+
+INSERT INTO student 
+    VALUES
+    (103,'Allen',16,4567,202);
+
+INSERT INTO student 
+    VALUES
+    (104,'Adams',14,7654,202);
+
+INSERT INTO student 
+    VALUES
+    (105,'John Doe',15,6789,203);
+
+INSERT INTO student 
+    VALUES
+    (106,'Miller',14,9876,203);
+
+INSERT INTO student 
+    VALUES
+    (107,'Mike',15,3456,204);
+
+INSERT INTO student 
+    VALUES
+    (108,'Rams',16,6543,204);
+
+INSERT INTO student 
+    VALUES
+    (109,'Ally',14,1092,205);
+
+INSERT INTO student 
+    VALUES
+    (110,'Tom',16,1093,205);
+
+
+
+INSERT INTO student 
+    VALUES
+    (111,'Tom',16,NULL,205);
+
+The SELECT command : It is used to query the database for table data, views
+
+
+SELECT * FROM table-name;
+
+SELECT * FROM college;
+
+SELECT * FROM student;
+
+SELECT col1,col2,col3... colN  FROM table-name;
+
+SELECT college_id, college_name FROM college;
+
+SELECT student_id, student_name, age, passport, college_id FROM student;
+
+SELECT college_id FROM college;
+
+SELECT college_name FROM college;
+
+SELECT student_id, student_name FROM student;
+
+SELECT student_id, age, passport FROM student;
+
+SELECT student_name, passport, college_id FROM student;
+
+SELECT student_id, college_id FROM student;
+
+APPLYING col-alias or col-titles
+
+SELECT column-name as col-alias, col-name as col-alias FROM table-name;
+
+SELECT student_id AS "sid det", student_name AS sname FROM student;
+
+We can use the columns that are actually not a part of the table;
+
+SELECT student_id, age, 'welcome' FROM student;
+
+SELECT student_id, age, 'welcome', 10*2  FROM student;
+
+the DUAL table.  It is a built in dummy table with no records in it ;
+
+SELECT 'hello' FROM dual;
+
+SELECT 10*2 FROM dual;
+
+SELECT ..WHERE
+
+
+SELECT col-list FROM table-name WHERE = condition;
+
+SELECT * FROM student WHERE college_id = 201;
+
+SELECT * FROM student WHERE student_name LIKE 's%';
+
+SELECT * FROM student WHERE age =15 ;
+
+we can use AND    OR operators while working with WHERE
+
+SELECT student_id, student_name, college_id, age
+  FROM student
+ WHERE college_id=201 OR college_id=202;
+
+SELECT student_id, student_name, college_id, age
+  FROM student
+ WHERE college_id=201 AND age=15;
+
+SELECT student_id, student_name, college_id, age
+  FROM student
+ WHERE college_id=202 OR  age>15;
+
+the ORDER BY clause;   It is used to sort the records in ascending or descending;
+
+SELECT col-list FROM table-name WHERE condition ORDERY BY col-name;
+
+SELECT student_id, student_name, age, college_id
+FROM student 
+WHERE age>= 15 OR (college_id = 201 OR college_id=202) 
+ORDER BY student_name DESC;
+
+
+SELECT student_id, student_name, age, college_id
+FROM student 
+WHERE age>= 15 OR (college_id = 201 OR college_id=202) 
+ORDER BY student_name, student_id;
+
+OPERATORS   AND, OR, LIKE, IS NULL, NOT
+
+
+INSERT INTO student 
+    VALUES
+    (111,'Tom',16,NULL,205);
+
+SELECT * FROM student WHERE passport IS NOT NULL;
+
+SELECT * FROM student WHERE passport IS NULL;
+
+SELECT * FROM student WHERE student_name NOT LIKE 'A%';
+
+FUNCTIONS.  
+   1. single row functions :  These functions operate on more than one row and return the result one row per each matching result.
+            UPPER() LOWER(),
+  2. group functions (some people also call these ones as aggregate functions) : These functions operate on a group of records and return a single result for a group of records.  MAX, MIN, SUM, COUNT, AVG
+
+SELECT student_name, UPPER(student_name), LOWER(student_name), INITCAP(student_name) FROM student  ORDER BY  student_name ;
+
+LPAD, RPAD, LTRIM, RTRIM, SUBSTR
+
+SELECT LPAD("SQL Tutorial", 20, "ABC") FROM dual;
+SELECT RPAD("SQL Tutorial", 20, "ABC") FROM dual;
+
+SELECT LPAD(student_name, 10, "Mr/Mrs") FROM student;
+
+SELECT COUNT(*) FROM student;
+
+SELECT COUNT(student_id) FROM student;
+
+SELECT COUNT(passport) FROM student;
+
+SELECT MAX(age) , MIN(age) , AVG(age), SUM(age) FROM student;
+
+the GROUP BY clause is used to group the records when working with GROUP FUNCTIONS (aggregate functions)
+
+SELECT student_id, college_id, MAX(age) , MIN(age) , AVG(age), SUM(age) FROM student GROUP BY college_id;
+
+SELECT student_name, college_id, MAX(age) , MIN(age) , AVG(age), SUM(age) FROM student GROUP BY college_id;
+
+SELECT student_id,student_name, college_id, age FROM student WHERE college_id = 201;
+
+HAVING : this is used to restrict the records when working with GROUP BY.
+
+SELECT  college_id, MAX(age) , MIN(age) , AVG(age), SUM(age) 
+FROM student 
+GROUP BY college_id 
+HAVING MAX(age) =16;
+
+SQL JOINs.  Joins are a way which are used to fetch data from more than one table
+
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+FULL JOIN
+
+SELECT table1.col, table1.col, table2.col,table2.col....  
+FROM first-table
+INNER JOIN
+second-table
+ON join-condition;
+
+first-table refers the table such as parent 
+second table refers to the table such as child
+table1.col, table2.col refers to the columns from the respective tables
+join condition refers to a condition that links the columns between the two tables
+
+
+SELECT 
+college.college_id, college.college_name, 
+student.student_id, student.student_name,student.age, student.passport, student.college_id
+FROM college
+INNER JOIN
+student
+ON college.college_id=student.college_id;
+
+UPDATE student SET college_id=null WHERE student_id = 111;
+
+
+INSERT INTO student 
+    VALUES
+    (112,'Tom',16,NULL,null);
+
+
+
+
+SELECT 
+college.college_id, college.college_name, 
+student.student_id, student.student_name,student.age, student.passport, student.college_id
+FROM college
+LEFT JOIN
+student
+ON college.college_id=student.college_id;
+
+
+
+INSERT INTO college
+VALUES (206, 'College-6');
+INSERT INTO college
+VALUES (207, 'College-7');
+
+	
+UNION
+SELECT 
+college.college_id, college.college_name, 
+student.student_id, student.student_name,student.age, student.passport, student.college_id
+FROM college
+RIGHT JOIN
+student
+ON college.college_id=student.college_id;
+
+
+SELECT 
+college.college_id, college.college_name, 
+student.student_id, student.student_name,student.age, student.passport, student.college_id
+FROM college
+CROSS JOIN
+student
+ORDER BY college.college_id;
+
+
+NESTED QUERIES (also called as SUB QUERIES)
+
+display all students details who are studying in 'College-1'
+
+SELECT * FROM student WHERE college_id IN 
+(SELECT college_id FROM college WHERE college_name='College-1' OR college_name='College-2');
+
+
+SELECT * FROM student WHERE college_id IN 
+(201,202);
+
+
+DISPLAY ALL STUDENTS DETAILS WHO ARE STUDYING IN THE SAME COLLEGE WHERE SCOTT IS STUDYING.
+
+SELECT * FROM student WHERE college_id =  
+ (SELECT college_id FROM student WHERE student_name='Scott')
+AND student_name <> 'Scott';
+
+JDBC - > ORM : Hibernate -> Spring JPA
+
+public class JdbcInsert {
+  public static void main(String args[]) {
+    Connection cn = DriverManager.getConnection("ip address of the db server","db username","db password");
+     Statement st = cn.createStatement();
+     st.executeUpdate("INSERT INTO college VALUES(" + college.getCollegeId()+",'"+ college.getCollegeName()+"')" )
+ }
+}
+
+
+SELECT * FROM student WHERE age > ANY 
+(SELECT age FROM student WHERE college_id IN 
+( SELECT college_id FROM college WHERE college_name IN 
+('College-1','College-2','College-3')  ) );
+
+
+SELECT coll_stu.college_name,coll_stu.student_name FROM  (SELECT 
+college.college_id as c_coll_id, college.college_name, 
+student.student_id, student.student_name,student.age, student.passport, student.college_id AS s_coll_id
+FROM college
+INNER JOIN
+student
+ON college.college_id=student.college_id) AS coll_stu;
+
+
+UPDATE command. It is used to update (modify) the records.
+
+ UPDATE table-name  SET col1=new-value, col2=new-value .... colN=new-value WHERE some-condition; 
+
+NOTE. WHERE Condition is very important, if we omit or forget WHERE condition, then all records will be updated.
+
+UPDATE college SET college_name='Medical College' WHERE college_id = 201;
+
+UPDATE college SET college_name='CS College' WHERE college_id = 202;
+
+UPDATE college SET college_name='Engineering College' WHERE college_id = 203;
+
+UPDATE college SET college_name='Business College' WHERE college_id = 204;
+
+UPDATE college SET college_name='Civil College' WHERE college_id = 205;
+
+
+UPDATE student SET college_id = (SELECT college_id FROM college WHERE college_name='Medical College') WHERE student_id=111;
+
+UPDATE student SET college_id = (SELECT college_id FROM college WHERE college_name='CS College') WHERE  student_id=112;
+
+
+UPDATE student SET passport=9631 WHERE college_id = (SELECT college_id FROM college WHERE college_name='Medical College') AND student_id=111;
+
+UPDATE student SET passport=9631 WHERE college_id = (SELECT college_id FROM college WHERE college_name='CS College') AND student_id=112;
+
+
+UPDATE student SET student_name = UPPER(student_name) ;;
+
+the DELETE statement.  It is used to delete records.
+
+DELETE FROM table-name WHERE CONDITION;
+
+DELETE FROM college WHERE college_id = 206 OR college_id = 207;
+
+DELETE FROM student WHERE student_id IN (111,112) ;
+
+STORED PROCEDURE  AND/OR FUNCTIONS
+
+A stored procedure or a function is an object underwhich we store a series of lines of code which we want to execute repeately as and when required.
+
+
+CREATE PROCEDURE name-of-the-procedure(param1,param2)
+BEGIN
+  the series of lines of code
+END
+
+DELIMITER &&
+CREATE PROCEDURE update_student_name(v_student_id INT(4), v_student_name VARCHAR(20))
+BEGIN
+    UPDATE student SET student_name = v_student_name WHERE student_id = v_student_id;
+  
+END &&
+DELIMITER ;
+
+
+DELIMITER ;
+
+CALL update_student_name(111,'abc');
+DROP PROCEDURE update_student_name;
+
+______________________________________________________________________________________
+day 15  12-sep-2022
+
+
+Maven:
+
+What is Maven ?
+Maven is a build and dependency management tool.
+
+What is build ?
+  It is the process of executing various steps  such as
+  (i) cleaning : it is the process of deleting the already generated .class files ( or .jar files) which are generated in thepriveous compilation process
+
+ (ii) creating
+ (iii)generating automatic source code (if required any)
+ (iv) compiling the source code
+ (iv) executing unit testing code
+(v) packaging the compiled code into JAR file or WAR file or EAR FILE
+ (vi) installing the packaged JAR file into some local folder
+ 
+
+What is dependency management ?
+ A dependency is nothing but a JAR file
+   a.jar b.jar  c.jar 
+   a1.jar  b1.jar  c1.jar
+   a2.jar  b2.jar  c2.jar
+
+BANKING PROJECT
+  source code development .java files, .txt files, .properties , source code for unit testing .java files
+
+Depending upon the type of the project that we develop  JSE/JEE the folder structure that we use will change for storing various files of the project
+
+The "folder structure" with respect to Maven is called as "archetype"
+
+Repository, What is it ?
+ It is a computer where the dependencies are stored.
+
+Central repository : A remote server maintained by Maven
+Local Repository
+Remote Repository
+
+
+Maven archetype ?
+  It is a folder structure that maven uses/creates for each project differenlty based on the type of project such as JSE/ Web project /JEE
+
+POM.xml (Project Object Model), what is it ?
+  It is an XML file in which we tell the complete information that maven requires.
+
+
+1.  the name of our project, version , our team name  artifactId, version, groupId
+
+
+ 2. we mention about the dependencies names, versions, the company that develop dependency
+
+    (a) the name of the dependency  -   artifactId
+   (b) the version of the dependency  -    5.4
+  (c) the company name / the team  name who developed that dependency   abc
+  (d) whether that dependency is required to our project during JUNIT TEST cases execution time or DURING THE prod time -  
+     artifactId, version, abc, scope
+
+   <dependencies>
+     <dependency>
+  <groupId>com.training</groupId>
+     <artifactId>banking-operations<artifactId>   
+    <version>1.0<version>
+   <scope>system</scope>
+    </dependency>
+
+     <dependency>
+  <groupId>the company name or the project team name who developed the jar file</groupId>
+     <artifactId>some name <artifactId>   
+    <version>some version <version>
+   <scope>do we need this jar file during TEST or prod or other</scope>
+    </dependency>
+
+     <dependency>
+  <groupId>the company name or the project team name who developed the jar file</groupId>
+     <artifactId>some name <artifactId>   
+    <version>some version <version>
+   <scope>do we need this jar file during TEST or prod or other</scope>
+    </dependency>
+ </dependcies>
+
+3.   project configuration information.   Which version of Java do we want to be used by maven for example 
+  <properties>
+
+  </properties>
+
+4. plugin management. 
+    What is a plugin ?
+ JUNIT
+
+Maven GOAL, PHASE, LIFECYCLE  
+
+Maven goal ?
+   A goal is a command that maven executes to perform some task. 
+   e.g   compile  (javac)   test (maven runs the junit test cases)
+
+Maven phase ?
+  A phase is a collection of goals   (compile, test, package)
+
+Maven lifecyle ?
+   A life cyle is a collection of phases  (default, clean, site)
+
+the "mvn" command it is the command that we use to instruct maven to do something
+
+  the "mvn" command is used to create a new project archetype,  or it is used to instruct maven tool to execute a goal, phase, lifecycle
+
+ mvn  goal-name-1  goal-name-2  phase-1 phase-2  lifecycle-1 lifecyle-2
+
+mvn clean 
+
+the "default" lifecycle
+
+mvn install
+
+Plugin , what is it ?
+  It is a software  (which has some commands) that we add as an extra feature to the maven
+
+By default, maven comes with a tonne of built-in plugins with it
+
+A part from the already available built in plugins, if we want maven to execute a command from a plugin that is not available BUILT IN to maven, then we need to extra plugins into maven
+
+
+  <build>
+   <plugins>
+   <plugin>
+   <groupId>
+    <artifacId>
+    <version>
+  </plugin>
+
+   <plugin>
+   <groupId>
+    <artifacId>
+    <version>
+  </plugin>
+
+   </plugins>
+
+ </build>
+
+
+SUPER POM :  is much like java inheritance.   A super pom is something that contains the description that is common to more than one project
+
+pom.xml (super pom)
+ <artifactId>
+ <groupId>
+  <version>
+
+ <dependency>
+ </dependency>
+
+ <dependency>
+ </dependency>
+
+ <dependency>
+ </dependency>
+
+ <dependency>
+ </dependency>
+pom.xml  (child pom)
+
+<parent>
+ <artifactId>   (artifact id that we mentiond in the pom.xml of the super pom)
+ <groupId>
+  <version>
+</parent>
+
+ <artifactId>
+ <groupId>
+  <version>
+
+ <dependency>
+ </dependency>
+
+ <dependency>
+ </dependency>
+
+
+
+What is build ?
+What is dependency ?
+What is dependency management?
+What is maven ?
+POM.XML
+
+<properties>
+</properties>
+groupId
+artifactId
+version  (-SNAPSHOT)
+scope
+
+<dependencies> <dependency>
+
+plugin
+
+goal, phase, lifeycyle
+
+archetype
+
+mvn
+
+default, ,clean, site
+
+repository
+
+
+To work with MAVEN, WE NEED TO JAVA INSTALLED COMPUTER
+
+
+the POM.XML file. this will be in the root directory of the project folder
+
+File -> New-> "Maven Project" -> archetype  selection-> choose our archetype that we require -> artifactid, groupid, version, packaging
+
+banking.jar (this will be copied into the local repository .m2 folder)
+
+
+insunrace
+
+loan
+
+card
+
+
+Maven project folder structure
+
+   src->main->java  : this folder contains  the .java files of all java code
+  src ->test ->java : this folder contains the .java files of all unit testing code (Junit code)
+
+  src->main->resources : this folder contains any  information such as file name, db url, db user name etc
+  src->test->resources : this folder contains any  information such as file name, db url, db user name etc
+
+  src -> main -> webapp : this folder is the parent folder of the web stuff and contains files such as .html, .js, .css, ....
+
+
+  C:\test>clean
+
+  the -D option with the mvn command : this option is used to input some key=value  parameters to the  mvn command
+
+ mvn install
+
+ we can execute a particular goal from a particular phase
+
+ mvn phasename : goalname
+ 
+ mvn compiler:compile test:test .................
+
+JUNIT
+ What is Junit ?
+ Junit is a unit testing framework (library) generally used for develop unit testing code for java applications.
+
+What is unit testing ?
+It is a process of testing a unit of code whether it works as expected
+It is a process in which we write some code that tests other piece of code whether it works as expected
+
+class Greeting {
+   
+ public String newYearGreeting(String name) {
+      if(name==null) {
+     throw new IllegalArgumentException("Name cannot be null...");
+    }
+    return  "happy new year: " + name;
+  }
+
+}
+
+
+public class TestGreeting{
+
+  Greeting greeting = null;
+ @BeforeAll
+ public static void setUp() {
+     greeting = new Greeting();
+  }
+
+ @AfterAll
+ public static void cleanUp() {
+     greeting = null;
+  }
+
+
+ @BeforeEach
+ publicvoid setUp() {
+     greeting = new Greeting();
+  }
+
+ @AfterEach
+ public  void cleanUp() {
+     greeting = null;
+  }
+
+
+ @Test
+  public void testNewYearGreeting() {
+
+        String expected="happy new year: Scott";
+         String actual = greeting.newYearGreeting("Scott");
+        assertEquals(expected, actual) ;   
+   }
+
+
+ @Test
+  public void testNewYearGreetingException() {
+  
+        assertThrows(IllegalArgumentException.class,  ()-> greeting.newYearGreeting(null) ) ;   
+   }
+}
+
+  public class Hello {
+   public static void main(...) {
+  TestGreeting grt = new TestGreeting();   
+   grt.testNewYearGreetiing();
+  } 
+  }
+Code coverage, what is it ?
+  It is a way to verify how much percentage of the source code is provided with the testing code .
+   OR
+ It is a way to veriy how much percentage of the source code is tested
+
+
+Assertions.  An assertion in Junit is a method that we use to test the various results of executing the source code
+Junit comes with a ton assertions.   e.g assertEquals() assertThrows() assertNull() assertNonNull() assertFalse() assertTrue() assertAll()    which are all static methods in Assertions class of Junit
+
+JUnit 5.x =  Junit Jupiter Engine + Junit Platform  + Junit Vintage
+
+Junit annotations.  These are the annotations that we apply on junit methods
+
+@Test @BeforeEach  @AfterEach  @AfterAll @BeforeAll
+
+JACOCO
+______________________________________________________________________________________
+day 16 13-sep-2022
+
+Logging : is the process of recording the various messages of the application such as  information messages, exceptions, errors, and anything similar
+
+ log4j
+
+Appender console = new ConsoleAppender(System.out);
+
+Appender file  = new FileAppender();
+  
+
+Layout layout = new SimpleLayout();
+
+Layout layout   = new PatternLayout( [%p]--%d{yyyy-MM-dd HH:mm:ss} %C %M %L %m %n);
+
+
+mvn install 
+mvn clean
+mvn package
+mvn phase:goal
+mvn sonar:sonar
+mvn groupid:artifactId:goal
+mvn  org.jacoco:jacoco-maven-plugin:prepare-agent
+
+http://localhost:9000
+
+admin
+admin
+
+admin
+new-password-
+confirm-password
+
+
+Right Click -> Run As -> Maven build ->
+#1 clean
+#2 install -DskipTests
+#3 org.jacoco:jacoco-maven-plugin:prepare-agent
+#4 sonar:sonar -Dsonar.login=admin -Dsonar.password=sonar1234
+
+JDBC : Java Database Connectivity
+
+What is JDBC?
+  It is a library (classes/interfaces) which we use from Java code to connect to DB server and perform CRUD operations 
+
+JDBC Driver , What is it ?
+   It is a mediating program (or software/library)  that exchanges the request and response between the JAVA code and DB
+
+ The JDBC Driver  software performs many things, a few of them are mentioned below
+  1.  It establishes a connection between the JAVA code and the DB server
+  2.  It sends the SQL statements such as INSERT, UPDATE, DELETE, SELECT from the JAVA PROGRAM to the DB SERVER 
+  3.  It sends the results of the SQL statements frm DB server to JAVA APP
+  4.   Translates java data types to DB data types and vice versa
+
+
+NOTE. If we want to work with JDBC programming in  a Java application (java code), then we need to have the JDBC driver added to the project path
+
+Where do we get the jdbc driver from ?
+  Mostly all DB providers they provide the JDBC DRIVERS for connecting to their server from JAVA
+
+WRT Mysql, the driver is available in maven repository
+
+ OR
+We can manually download the driver related JAR file  from internet whereever it is avaiable
+
+ com.mysql.cj.jdbc.Driver
+
+
+All JDBC related classes and interfaces are available in two packages
+1. java.sql ->  DriverManager (C),  Connection (I),  Statement (I), ResultSet (I), PreparedStatement(I), CallableStatement (I)
+2. javax.sql  (X MEANS EXTENSION) ->  DataSource
+
+NOTE. Almost all methods in the classes and interfaces related to JDBC method calls, they have "throws SQLException"
+
+ 
+The DriverManager class, what is it ?
+
+ A Driver Manager is a container that contains (that holds) the JDBC Drivers of all DB servers
+
+ String connectionUrl = "jdbc:mysql://localhost:3306/sample"
+ String username="root";
+ String password="Mysql@123";
+
+
+
+
+#1  Load the DB specific JDBC Driver class into the memory, which will then be held inside the Driver Manager
+   try {
+   Class.forName("com.mysql.cj.jdbc.Driver") 
+    }catch(ClassNotFoundException e) {
+   logger.error("Unable to load the driver class " + e.getMessage());
+   }
+
+#2.  Establish a connection with the DB server
+
+    Connection cn = null;
+ 
+ try {
+    cn = DriverManager.getConnection(connectionUrl, username, password);
+    logger.debug("Connection to db successful");
+  } catch(SQLException e) {
+     logger.error("Unable to get a DB connection" + e.getMessage() );
+ }
+
+package p1;
+  
+ public class One {
+
+ }
+
+
+package p2 ;
+
+  public class Two {
+
+}
+
+
+package p3;
+  import p2.Two;
+ public class MainTest  {
+    public static void main(String args[]) {
+      Two two = new Two(); 
+     Class.forName("p1.One")
+  }
+
+ }
+___________________________________________________________________________
+day 17 14-sep-2022
+
+
+#3   Create an object of "java.sql.Statement" interface
+   
+   Statement st ;
+    st = cn.createStatement(); // WHERE  cn IS AN OBJECT OF THE java.sql.Connection interface
+
+#4.  call the  execute***() methods on the Statement interface
+    (i) executeUpdate(String sqlCommand) :  This method is used to perform
+               (A) SQL INSERT operation
+             (B) SQL UPDATE operation
+            (C)  SQL DELETE operation
+            This method returns an int indicating, how many rows are effected due to the command that is executed
+  (ii)  executeQuery():  This method is used to perform SELECT operation/ SELECT query
+                 This method returns a pointer to java.sql.ResultSet object
+  
+            ResultSet rs = null;
+                rs = st.executeQuery(" the select statement tthat we want to execute here")
+	while(rs.next()) {
+                        int studentId = rs.getInt("student_id");
+	          String studentName = rs.getString("student_name");
+                         int age = rs.getInt("age");
+                        int passport = rs.getInt("passport");
+                       int collegeId = rs.getInt("collegeId");
+
+                          Student temp = new Student(studentId, studentName, age, passport, collegeId);
+                          studentList.add(temp);
+             }
+                         return studentList;
+ 
+
+ResultSets are of two types.   Scrollable and Unscrollable
+
+UPDATABLEand uneditable resultset
+
+st = cn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+
+rs.updateInt("student_id", 1112);
+
+
+
+The PreparedStatement interface.   
+   (i) This is the child interface of the Statement interface
+  (ii) It allows the DYNAMIC supply of values to the SQL commands like INSERT, UPDATE, DELETE, SELECT
+
+ A prepared statement is something which is PREPARED  ready for execution.
+
+ What do we mean by PREPARED and what to we mean by ready for execution ?
+  
+   It means, the SQL statement is COMPILED only for the first time when it reaches the DB server, 
+  If the second time onwards, if the DB gets the same SQL command, it will be directly executed, without recompiling
+
+ loading the command
+ parsing and syntax check of the command
+ compile and execute
+
+   PreparedStatement pst  = null;
+ 
+    pst = cn.prepareStatement("INSERT INTO student VALUES (?,?,?,?,?)");
+
+   pst.setX(?index, value);
+
+   pst.setInt(1,1002);
+   pst.setString(2,"Demo");
+   pst.setInt(3, 111);
+   pst.setInt(,,,)
+    pst.setInt(...)
+   pst.executeUpdate();
+
+The CallableStatement . This is the child interface of the Statement interface and is used to execute the stored procedures or functions from within the java program which are stored in the database
+
+ CallableStatement cst = null;
+ String callString = "{ CALL update_student_name(?,?)}" ;
+  cst = cn.prepareCall(callString);
+   cst.setInt(1,111);
+   cst.setString(2,"Test");
+   cst.executeUpdate();
+
+
+DatabaseMetadata
+ResultSetMetata
+
+
+Java Enterprise Edition
+  This edition of Java provides the libraries/facilities to create 
+  (i) Java Web Applications = Technolgoies like  Servlets and JSP (HTML,CSS,JS...)
+  (ii) Java Enterprise Applications = Everything.. right from JSE  to Servlets, JSP, EJB, Messaging, Java Mail...
+
+
+Web applications are packaged into a file with an extension of .WAR (web archive)
+
+Enterprise applications are packaged into a file with an extension of .EAR (enterprse archive)
+
+Servlets and JSP are replaced by Angular/ReactJS
+
+EJB is replaced by Spring/Hibernate
+
+
+How are web applications executed ?
+Where are web applications executed ?
+Who executes the web applications?
+
+  tomcat
+  netty
+  jetty
+  undertow
+
+  C:\program files\Apache Software Foundation\Tomcat x.y\webapps\shopping.war
+
+What is Web server ?
+  It is a software that hosts (that contains) the web applications (e.g. shopping.war)
+
+What is a webcontainer ?
+   It is a special program that lives inside the WEB SERVER,
+What does the web container do ?
+The  web container loads and executes the code of the web applications (e.g  prodlist.html, ProductList.class file....)
+
+The client need not be a web browser always
+
+The communication between the client and the server happens through the use of  HTTP protocol
+
+The request sent by client is called HTTP request
+The response sent by the server is called HTTP response
+
+HTTP protocol : It is the software used by the web client (such as browser) to send a request to a web server
+
+HTTP METHOD (HTTP VERBS) 
+  The HTTP protocol defines few pre defined NAMES which are called as HTTP METHODs
+ GET  POST PUT DELETE (OPTIONS, TRACE , HEAD, PATCH)
+
+What is the meaning of an HTTP method ?
+   An HTTP method, defines the scope of action, that a web client such as web a browser want to perform with  a given piece of data on the server
+
+if the web client wants to get the data from the server, then the browser sends a HTTP GET request to the server
+
+if the web client wants to add  the data to the server, then the browser sends a HTTP POST request to the server
+
+if the web client wants to modify the data on the server, then the browser sends a HTTP PUT request to the server
+
+if the web client wants to delete the data on the server, then the browser sends a HTTP DELETE request to the server
+
+
+What is a servlet?
+ It is a  compiled .class file of a Java program that is stored in the web server
+ Whenever a web server receives a request , then it asks the WEB CONTAINER to load the  .class file (of the so called servlet) and execute it
+After the web container loads and executes the .class file of the servlet, the produced result will be then sent to the client by the server
+
+ e.g
+
+  public interface Servlet {
+     public void init() ;
+   public void service(ServelRequest, ServletResonse) ;
+    publci void destroy();
+  }
+  public class GenericServlet implements Servlet {
+   public void init() {  }
+   public void service(ServelRequest, ServletResonse)  {   }
+    publci void destroy() {   }
+  }
+  public class HttpServlet extends GenericServlet {
+
+ public void init() {  }
+   public void service(ServelRequest, ServletResonse)  {   }
+    publci void destroy() {   }
+   public void doGet() {
+
+    }
+
+   public void doPost() {
+
+    }
+
+   public void doPut() {
+
+    }
+
+   public void doDelete() {
+
+    }
+
+
+ 
+  }
+  public class DemoServlet extends HttpServlet {
+
+ public void init() {  }
+   public void service(ServelRequest request, ServletResonse response)  {  
+   if(request.getMethodName().equals("GET")) {
+     doGet(request, response)
+   } else if (request.getMethodName().equals("POST")) {
+     doPost(request, response)
+   } 
+
+ }
+    publci void destroy() {   }
+
+ 
+    public void doGet(  HttpServletRequest request, HttpServletResponse response) {
+        PrintWriter pw =response.getWriter();
+           pw.println("hello world");
+    }
+
+   public void doPost() {
+
+    }
+
+   public void doPut() {
+
+    }
+
+   public void doDelete() {
+
+    }
+  }
+
+
+
+client- > server -> container -> service -> doX()
+
+
+public class HelloServlet extends ... {               /hello
+
+}
+
+public class ProductServlet extends .... {     /product
+
+}
+
+public class LoginServlet extends ...  {   /login
+
+}
+
+
+
+ http://IPADDRESS:port-number/project-name/the-url-that-is-declared-to-servlet
+
+
+http://localhost:8000/servlet-example/hello
+
+Where do we declare a URL for any servlet class ?
+   There is a special file called web.xml in any web application
+
+ The web.xml file is technically called as  DEPLOYMENT DESCRIPTOR
+
+In the web.xml we decalre URL to any servlet, and also other details
+
+
+NOTE.  URL to a servlet can also be declared without web.xml from version 3.0 OF SERVLETS
+
+
+the servlet related classes and interfaces, packages etc. 
+
+  All classes and interfaces, related to servlets are available in two packages
+ (i) javax.servlet :  Servlet, GenericServlet, ServletRequest, ServletResponse,  Cookie, RequestDispatcher
+ (ii) javax.servlet.http  ->   HttpServlet, HttpServletRequest, HttpServletReponse, HttpSession, 
+
+the afore mentioned two packages are available in some jar files, we can pull them from mvnrepository, and also they are available with any web server installation such as tomcat, undertow
+
+#1. We download and install tomcat web server  8.5 version  8.x  9.x
+____________________________________________________________________
+day 18 15-sep-2022
+
+#1. Create a new "dynamic web project", while creating choose "web module" version to "2.5"
+
+The Web application folder structure
+   --Project root folder
+      --WEB-INF
+           --web.xml (file) -- this is optional from version 3.0 of servlets onwards
+           --lib  (folder)    -- this folder will be used to store any .JAR files that the web application depends on
+           --classes (folder)  -- this folder stores the compiled .class files of all .java files used inside the web application
+
+
+
+jar -xvf  webapp1.war 
+
+    -x means extract the file
+   -v means display the verbose output, which means display the list of files and folders which are extracted
+  -f means the file name, webapp1.war
+
+Inside the Tomcat web server installation, there is one folder called "webapps"
+
+All web applications are stored in the webapps folder
+
+
+The URL SYNTAX to load any servlet/jsp/html  (all these  servlets,jsps, htmls are called web resources)of a web application is like this
+
+ http://ipaddress:portnumber/CONTEXT-ROOT/url-of-servlet-or-jsp-or-html-file
+
+http://localhost:8000/web-app2/DemoServlet1
+http://localhost:8000/web-app2/DemoServlet2
+http://localhost:8000/web-app2/hello.html
+http://localhost:8000/web-app2/login.jsp
+
+
+NOTE. By default in STS/ECLIPSE project creation steps, the CONTEXT-ROOT is named as the "project name"
+
+The web.xml file 
+  This file is called deployment descriptor
+  There will be zero or one deployment descriptors for an entire web application
+  All servlets will declared with in the same web.xml file
+
+To declare a servlet inside the web.xml file  we  use few XML tags in it
+
+  <servlet> 
+     <servlet-name>Hello</servlet-name>
+    <servlet-class>com.examples.HelloServlet</servlet-class>
+  </servlet>
+
+After declaring a name to a servlet, we declare a URL to that <servlet-name>
+
+ <servlet-mapping>
+   <servlet-name>Hello</servlet-name>
+   <url-pattern>/test</url-pattern>
+ </servlet-mapping>
+
+
+A servlet is a java .class file  which lives in server and is loaded and executed by web container of server
+Servlets extend built in class called HttpServlet --> GenericServlet ---> Servlet
+
+Servlet->  init() , service() , destroy()
+GenericServlet -> init() , service() , destroy()
+HttpServlet -> init() , service() , destroy() + doX() methods
+
+
+The Servlet interface
+  #1. This interface declares (contains) the life cycle methods.
+    What are life cycle methods ?
+     These are the methods which are executed by the web container during the process of loading and executing a servlet
+     in response to a request
+    init(ServletConfig config),  service(ServletRequest, ServletResponse), destroy()
+
+The GenericServlet  class  
+  This class implements Servlet interface
+
+The HttpServlet class
+  This class extends the GenericSerlvet. The HttpServlet declares additional methods of its own, which are called as doX() methods where X is replaced with one of GET PUT POST DELETE TRACE OPTIONS HEAD
+e.g   doGet(), doPost()
+
+ All doX() methods take two parameters   HttpServletRequest, HttpServletResponse
+  e.g    public void doGet(HttpServletRequest request, HttpServletResponse)
+    
+  All doX() methods declare two exceptions in throws,    ServletException, IOException
+     e.g    public void doGet(HttpServletRequest request, HttpServletResponse) throws IOException, ServletException
+      IOException occurs if any thing fails while pw.println() is executed.. a failure such as some memory read/write error
+      ServletException occurs if the web container cannot load the .class file of the servlet and create an instance of it for some reason
+
+THE SERVLET LIFE CYCLE EXECUTION
+
+   Who executes the servlet lifecycle methods ?
+    Web container
+
+#1. When the request comes for a servlet (such as the browser sending the URL to.. http://localhost:8000/webapp/DemoServlet)
+     The server receives the request and gives to web container
+
+#2. The web container consults the web.xml file to figure out the .class file that is associated with the servlet url and then loads the  .class file  by code something like this 
+            Class c  =Class.forName("com.ex.DemoServlet");
+
+
+#3. Web container instantiates the .class file (e.g  DemoServlet.class ) by the code something like this
+                  c.newInstance();
+
+#4. web container will the create an object of ServletConfig interface, and then makes a call to init(ServletConfig) by supplying the ServletConfig object to the init() method
+
+
+#5. The web container creates two objects, one is of ServletRequest, other is of ServletResponse.    Inside the request object it places all the HTML REQUEST DATA such as <form> data and others.
+
+#6. The web container creaates a NEW THREAD, and then makes a call to service(ServletRequest,ServletResponse) on that thread
+
+#7. The service() will then make a call to relavant doX() method based on the incoming HTTP REQUEST METHOD TYPE
+    note. The service() will transfer the ServletRequest, ServletResponse objects to the doX() method that it calls
+
+   VVIMP.  The container always makes a call to service() method, and it is the service() method that makes a call to relavant doX()
+    IMP.  If we override the service() method in our servlet class, then the default functionality of the service() method is lost
+
+#8. after the doX() is over then the reponse sending process is over.
+
+#9. the web container makes a call destroy() method just before the servlet instance is removed from memory
+   When is the servlet instance removed from memory ?   
+      When the web app is stopped, or the server is stopped.
+
+NOTE,   2,3,4 and 9 ARE EXECUTED only one time. not for every request
+
+  browser->server->container->web.xml->class.forname()->c.newinstance()->ServletConfig->init()->thread->service()->doX()->destroy
+
+What are servlet life cycle methods ?
+   init()->service()-destroy()
+
+
+The web.xml and its meaning/its purpse
+   1.  It is called deployment descriptor
+  2. There will be zero or one web.xml files based on the web container version/servlet version for an application
+  3. This file is placed inside the   root-folder->WEB-INF->web.xml
+  4. This file contains some information about the servlet URLs declaration, the welcomes files declarations, the security declaration if any, the jsp file declaration if any.. and much more
+
+
+https://www.booking.com
+
+When and how is the web.xml loaded  by/during?
+
+Whenever, we start the server, it loads the web.xm files of all web applications into server's memory, which is then consulted by the webcontainer
+
+note. There can be more than one url declared/mapped to a servlet
+
+The HTTP METHODS, when are they executed?
+  OR
+
+When is  GET request triggered by the client (usually a browser, but not browser always) ?
+
+  A HTTP REQUEST becomes a GET request in one of the following cases
+    1. When we manually type the URL in the address bar and hit the  "enter" key
+   2. When we click a link in a web page, then it tirggers a GET request to the server  
+   3. when we click a "submit" button that is enclosed in a  <form> tag whose method is declared to GET, then a GET request is triggered to the server
+
+   <form method="get" action="/context-root/servlet-url-or-html-file-url-or-jsp-file-url">
+   <input type="text" name="empid"/> <br>
+   <input type="text" name="empid"/> <br>
+     <input type="submit" value="submit"/> <br>
+   </form>
+
+Except GET request,  remaining all HTTP requests like POST, PUT, DELETE are executed 
+   (i) either when we submit a form whose METHOD is set to relavant
+   (ii) OR, when we make a programmatic call to the server
+         restTemplate.getForObject(the url to which we want to send the request)
+         restTemplate.postForObject(the url to which we want to send the request)
+
+The ServletRequest object -> HttpServletRequest >  Object of this interface contains the REQUEST object data.
+
+
+<form method="get" action="/demo-app/empservlet">
+   <input type="text" name="empid"/> <br>
+   <input type="text" name="empname"/> <br>
+     <input type="submit" value="submit"/> <br>
+   </form>
+
+_______________________________________________________________________________
+day 19 16-sep-2022
+
+ServletConfig, ServletContext
+
+The javax.servlet.ServletConfig interface. 
+  #1. Object of this interface is created automatically by the web container during the lifecycle of  servlet
+  #2. Object of this interface is given to the init(ServletCofig) by the web container during the lifecycle
+ #3. We can use this object to store OR to initialize a servlet with some information
+  
+ What is the use of ServletConfig ?
+   It is used to initialize the servlet with some text information (just like the way we pass some data to the constructor when we create any object)
+ 
+ Why cannot we use the constructor of a servlet to pass the initial information ?
+  Because we don't create the object of the servlet class, we don't have access to the constructor call.
+
+Every servlet has its own separate ServletConfig object with it.
+
+ServletConfig is generally used to supply the information such as filename, db-url, and any other information that the servlet has to work with as soon as it's object is created. like opening file,  getting a connection db...
+
+the getServletConfig() method. It is from GenericServlet class ( actually from Servlet interface) and is used to get access to the ServletConfig object that is with a servlet
+
+the getInitParameter(String paramName) : this method is used to read the init params declared for a servlet.
+
+We can declare <init-param> either in web.xml (if we are using web.xml)  or using annotations, (if we are not using web.xml)
+
+
+The ServletContext interface
+#1. This is an interface from javax.servlet package
+#2. Object of this interface is created by the web container when the web application is loaded into the server's memory, web application is loaded into the server's memory when we START the application
+
+#3 There will be one single ServletContext per entire web application (it's kind of a static variable in a class)
+
+#4. ServletContext is used by various servlets/jsps of a web application to exchange  data
+
+  #5. Any servlet/jsp  can 
+          (i) store objects in servlet-context
+          (ii) read objects from servlet-context
+          (iii) remove objects from servlet-context
+
+#5. We can get access to a ServletContext object,  from the getServletContext() method
+
+
+
+
+public interface Servlet { 
+   init()  service()  destroy()
+}
+
+public interface ServletConfig {
+    getServletContext()
+}
+
+ public class GenericServlet implements Servlet, ServletConfig {
+   init()  service()  destroy()     getServletContext()
+}
+
+public class HttpServlet extends GenericServlet {
+ init()  service()  destroy()     getServletContext()  + doX()
+}
+
+public class TestServlet extends HttpServlet {
+// init()  service()  destroy()     getServletContext()  + doX()
+    
+  ServletContext ctx = getServletContext();
+}
+
+   ctx.setAttribute(String objectName, Object object)
+  ctx.getAttribute(String name)
+   ctx.removeAttribute(String name)
+
+The RequestDispatcher  interface.    This interface has methods which we can use to ROUTE(transfer) the incoming request  from one servlet to other servlet  (or from one servlet to other jsp  or html file  etc)
+
+  RequestDispatcher rd  = null;
+  String targetUrl = "/relative-url-of-the-resource"  ;   resource can be an HTML file name, a servlet url, a jsp url;
+
+    rd = request.getRequestDispatcher(targetUrl);
+    rd.include(request, response) ;  OR rd.forward(request,response) ; // based on the code demand
+
+Redirecting requests.  We can do this by the use of  sendRedirect() method of HttpServletResponse
+
+Session tracking
+
+STATELESS PROTOCOL vs STATEFUL PROTOCOL
+
+What is a STATE ?
+   STATE refers the client specific data such as username, password, shopping cart list, 
+
+STATEFUL PROCOTOL : it is that protocol which remembers the client's STATE (users info such as username, password, shopping cart items, address) across all page navigations
+
+request-response-1   username-password  - cycle closed  . but the connection is live (is not closed)
+request-response-2   add 2 items to the cart - cycle closed  . but the connection is live (is not closed)
+request-response-3   add 3 more items to the cart - cycle closed  . but the connection is live (is not closed)
+
+STATELESS PROTOCOL : this one does not remember the request data of each request-response cycle after the response is sent, the connection is closed, and the server forgets the client's data sent in the request.
+If the same client sends a new request with the new data, then the server understands that it is a brand client and the request is a brand new request
+
+request-response-2   add 2 items to the cart - cycle closed  . but the connection is live (is not closed)
+
+Ability of the server to remember the clients data across all requests is called session management
+
+1. using hidden form variables
+2. using rewritten URLS
+3. using cookies mechanism
+4. using session data storage on the server
+
+
+Creating a session object, how do we do this ?
+    the HttpServletRequest interface has a method called  getSession(boolean b);getSession()
+	HttpSession session=  request.getSession();  
+
+returns an existing session object if it exists and returns null if session does not exist already
+
+		request.getSession(true  or false)
+
+ session.setAttribute();
+
+GET vs POST method
+
+Summary
+ What is a Servlet ?
+  What is a Web server ?
+  What is a web container ?
+  What does a web container do ?
+  Where does the web container stay OR where does the web container live ?
+  Who executes the servlet ?
+  what are the servlet packages ??
+  Which interface declares the servlet life cycle methods ?
+  What are the life cycle methods of a servlet ?
+   Which object stores the request data (such as form data) ?
+  how to read the request data (request parameters) ?
+  how to dispatch a request to other servlet/jsp/html ?
+ how to create a session object ?
+ how to store/read/delete data from the ServletContext ?
+ how to read/store/delete data from HttpSession ?
+ how to redirect to a different URL ?
+  how to forward to a different resource (HTML, SERVLET URL, JSP url) ?
+  What is deployment descriptor ?
+  How many deployment descriptor files will be there in version upton and including 2.5 ?
+  Is deployment descriptor complusory from  3.0 onwards ?
+  which xml tags are used to declare a servlet in deployment descriptor ?
+ which xml tags are used to declare a URL pattern to a servlet in deployment descriptor ?
+  how to declare (which xml tags are used)  welcome files in the web.xml ?
+ what are the doX() methods in HttpServlet meant for ?
+ Who executes the lifecycle methods ?
+ how many times the init() method is executed during the lifecycle of a servlet in case of zero or many requests are sent  to it?
+ how many times the service() method is executed during the life cycle of a servlet in case of zero many requests sent to it ?
+ how many times the destroy() method is executed ?
+ how to destroy the HttpSession object ?
+ 
+_____________________________________________________________________________________
+day-20  19-sep-2022
+
+In place of SERVLETS, we use something called "controllers" in Spring MVC topic
+
+com.shopping.servlets  OR com.shopping.controller
+
+Filters -  Spring Security - DelegatingFilterProxy
+
+GET vs POST methods.  
+
+ In GET request the request data (such as HTML form data) is appended in the URL whereas the POST request, the request data is  not appended in the request URL
+
+
+JSP : Java Server Page
+What is a JSP ?
+  It is a server side page  (server side document) that lives in web server (such as tomcat) and is loaded and executed by the  WEB CONTAINER, whenever there is a request to the JSP
+
+Technically, a JSP is nothing but a servlet.   What does this sentence mean ?
+  Every .jsp file is automatically translated into  a servlet  .java file and is compiled into a .class file before execution
+
+  hello.jsp --->   hello_jsp.java --> hello_jsp.class -->   c.newInstance();
+
+Difference between servlets and JSP ?
+  There is no techincal or functional difference,  which means, there is no difference in the way they are executed. 
+  The only difference is syntax in the way we write the code for them
+
+What do we use JSP for ? 
+It is used to develop dynamic web applications (both JSP and servlets are used to develop dynamic web pages)
+
+The file extension of a JSP file  is  .jsp..
+
+hello.jsp   login.jsp  student.jsp
+
+What does a JSP file contain ?
+   It can contain various kinds of code  e.g
+   1.   plain HTML code (html tags)
+  2. JavaScript
+ 3.  Java code (such as object creation, import statements, method calls, java loops, ..... )
+ 4. plain text 
+ 5. some special tags related to JSP  (JSP tags are much like HTML tags, with some extra functionality)
+
+
+
+	pw.print("<ul>");
+		for(Student s : studentList) {
+			record+= s.getStudentId()+"-"+s.getStudentName()+"-"+s.getAge()+"-"+s.getPassport()+"-"+s.getCollegId();
+			pw.println("<li>"+record+"</li>");
+		}
+		pw.print("</ul>");
+
+
+  <ul>
+  <li>
+  record
+ </li>
+ </ul>
+ 
+JSP tags, what are they ?
+  The JSP library provides   (or comes with) a bunch of ready made tags (built in tags) which are called JSP tags.
+  These tags have some functionality in their background code
+
+JSP tags are of different categories
+ 1. directive tags
+ 2. scripting tags
+ 3.  action tags
+
+JSP implicit objects, What are they ?
+  Every .jsp file automatically contains a bunch of 9 PRE-DEFINED objects with it. These pre defined objects are called JSP implicit objects
+
+ out
+ page --- > represents the  "this" of the JSP page object that is created by the web container
+ pageContext
+ request
+ response
+ session
+ exception
+ application
+ config
+
+Every JSP's  .java file automatically implements an internal jsp related interface called "HttpJspPage"  which is a child of  another internal JSP interface "JspPage"
+
+
+JSP life cycle  -  3 phases 
+  1. translation phase .  This is something during which the .jsp file is translated into a relavant .java file  (e.g hello_jsp.java)
+  2. compilation phase.  this is something during which the translated .java file is compiled (e.g  hello_jsp.class)
+  3. loading and execution phase.  This is something during which the .class file is loaded and instantied, followed by the execution of the method such as jspInit(), _jspService() jspDestroy()  (much like the way of init(), service() destroy() of servlets lifecycle)
+
+
+
+Working and developing with JSP is nothing but using tags of various categories
+
+The JSP tags
+ 1. directive tags .    These tags are evaluated and executed during translation phase. The 3 most common directive tags are
+     (a) page
+    (b) include
+   (c) taglib
+
+The syntax to use a directive tag is as follows
+  
+ <%@ tagname  attr=val attr=val ..... %>
+
+  <%@ include file="header.jsp" %>
+   header.jsp 
+   <h1> This is my page heading </h1>
+
+   footer.jsp
+   <h1> This is my page heading </h1>
+
+   hello.jsp
+ 
+   <%@ include file="header.jsp" %>
+  <h1>Welcome To JSP>
+
+   <%@ include file="footer.jsp" %>
+
+
+The page directive tag.  This tag is used to declare few page settings, In addition to page settings, we can use the "page"  directive tag to import any java class/interface
+ What do we mean by page settings ?
+  e.g.  we can instruct the JSP to create or not create the   HttpSession object, 
+
+  HttpSession session = request.getSession(true) ; // where "request" is one among 9 ready made objects
+ 
+ <%@ page 
+	session="true"  
+	contentType="text/html"  
+	import="java.util.LinkedList, java.sql.Connection" 
+	isThreadSafe="true"  
+	isErrorPage="true OR false"
+              errorPage="some jsp file name which represents to be executed when an exception occurs in ANY jsp file"
+%>
+
+  session.setAttribute(); //this cannot be done,  if we declare   <%@ page session=false  %>
+
+
+The    (c) taglib  directive : It is used to import additional tags  (may be,  developed by other developers)
+
+  <%@ taglib  uri="here we mention the url of the tag-library that we want to import into the jsp"  prefix="some prefix" %>
+
+ credit-card-tags1 ---   https://www.somevendor1.com/cards   <validate-card  cardNumber="---"  expiry="--">
+						 <check-limit>
+
+ credit-card-tags2 ---   https://www.somevendor2.com/cards  <validate-card  cardNumber="---"  expiry="--">
+						<check-over-draft>
+
+test.jsp
+
+ <%@ taglib uri=" https://www.somevendor2.com/cards"  prefix="vendor1" %>
+ <%@ taglib uri=" https://www.somevendor1.com/cards"  prefix="vendor2" %>
+  
+  <vendor1:validate-card>
+ <vendor2:validate-card>
+ <vendor1:check-limit>
+<vendor2:check-over-draft>
+
+The JSP Scripting tags. 
+  These tags are used to place java syntax  inside the JSP file
+   (i) We can declare variables, create objects, declare methods... etc
+  (ii) we can call methods objects,
+ (iii) we can use loops,
+ (iv) we can use any java syntax
+ 
+ there are 3 commonly used scripting tags
+
+  1. DECLARATION TAG
+      This tag is used to declare variables, create objects, declare methods... etc
+   syntax
+             <%!
+                 int i = 10;
+                String s1="hello";
+                Date d1 = new Date();  // this line needs an  import from page directive
+                List<String> strList  = new ArrayList<String>();  // this line needs an import from page directive
+
+                  public int max(int i, int j) {
+                         // some code here to return max number
+	   }
+                   public String getFullname(String firstname, String lastname) {
+		// some code here to return full name
+	  }
+	%>
+
+	<jsp:declaration>
+                 int i = 10;
+                String s1="hello";
+                Date d1 = new Date();  // this line needs an  import from page directive
+                List<String> strList  = new ArrayList<String>();  // this line needs an import from page directive
+
+                  public int max(int i, int j) {
+                         // some code here to return max number
+	   }
+                   public String getFullname(String firstname, String lastname) {
+		// some code here to return full name
+	  }
+	
+	</jsp:declaration>
+
+The EXPRESSION TAG
+
+ <%= some-expression-here %>
+
+   where "some-expression-here"  can be method call, a computation such as 10+20, i+j....
+
+<%= 10+20 %>   // this is converted to out.println(10+20)
+
+The  SCRIPTLET tag.  This allows to use java code like loops , and other...
+
+ <%
+     java code
+  %>
+
+  <%
+   for(int i=0;i<=10;i++) {
+ %>
+	<h1>
+<%
+     out.println("hello");
+%>
+ 	</h1>
+<%
+   }  
+ %>
+
+the "page"  errorPage="page file"   isErrorPage="true or false"
+
+
+DIRECTIVE TAGS, include, page, taglib
+SCRIPTING TAGS  declaration, expression tag, scriptlet 
+ACTION TAGS. These are executed during runtime of JSP
+
+ All JSP built in action tags have a tag prefix of jsp
+
+ <prefix:tag-name>
+      content inside the tag
+ </prefix:tag-name>
+
+WHERE prefix = jsp,   tag-name= forward, include, setProperty, getProperty, useBean param
+
+NOTE. based on situation, some tags go in ONE line without nested content inside it
+
+<jsp:forward>    <jsp:include>  <jsp:param>  <jsp:useBean>  <jsp:setProperty>  <jsp:getProperty>
+
+<jsp:forward>    <jsp:include> these two are shortcut alternative sytax to  rd.forward() and rd.include() syntax of servlets
+
+<jsp:include page="a servlet url  or  url of a jsp file name or url of an html file"/>
+<jsp:forward  page="a servlet url  or  url of a jsp file name or url of an html file"/>
+
+<jsp:useBean> <jsp:setProperty>  <jsp:getProperty> , these three tags are used to work with creating an object of  DTO, and setting its properties/ getting properties
+
+
+<jsp:useBean> : This tag works in such a way that it EITHER locates an object (a bean) with a given id,  OR if the object with a given id does not exist, it will create a freshone 
+
+<jsp:useBean id="s1" class="packagename.packagnem.classname"  scope="page OR request OR session OR application"/>
+
+<jsp:useBean  id="s1" class="Student"/>   //    Student s1 = new Student();
+
+
+JSTL :  JSP Standard Tag Library
+What is JSTL?
+ It is a bunch of pre defined tags which provide TAG like syntax , alternative to Java coding
+There are different categories of JSTL tags, each of which provide some special functinality
+1.  CORE
+2. SQL
+3. FORMATTING
+
+To work with JSTL tags, we need to add two JAR files 
+ (a) jstl.jar (with some version number)
+ (b) standard.jar (with some version number)
+
+JSP EL (Expression Language)
+
+
+ <c:set var = "salary" scope = "session" value = "${2000*2}"/>
+
+    int salary =  2000 * 2;
+     session.setAttribute("salary",Integer.valueOf(salary));
+
+      <c:out value = "${salary}"/>
+
+
+
+ List<String> list = Arrays.asList("Java","Angular","React JS");
+
+   <c:forEach items="${list}" var="str">
+      <c:out value="${str}" />
+
+ </c:forEach>
+
+
+
+
+
+ 
+
+
+
+
+

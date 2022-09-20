@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Day19-Sep16-webapp1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>DemoServlet</display-name>
+    <servlet-name>DemoServlet</servlet-name>
+    <servlet-class>com.servlet.config.DemoServlet</servlet-class>
+    <init-param>
+      <description>first name</description>
+      <param-name>firstName</param-name>
+      <param-value>pooven</param-value>
+    </init-param>
+    <init-param>
+      <description>last name</description>
+      <param-name>lastname</param-name>
+      <param-value>mathi</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemoServlet</servlet-name>
+    <url-pattern>/DemoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DataStoreServlet</display-name>
+    <servlet-name>DataStoreServlet</servlet-name>
+    <servlet-class>com.servlet.config.DataStoreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataStoreServlet</servlet-name>
+    <url-pattern>/DataStoreServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DataReadServlet</display-name>
+    <servlet-name>DataReadServlet</servlet-name>
+    <servlet-class>com.servlet.config.DataReadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataReadServlet</servlet-name>
+    <url-pattern>/DataReadServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

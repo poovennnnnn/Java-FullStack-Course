@@ -1,0 +1,563 @@
+https://dist.springsource.com/release/STS/index.html 3.9.9
+
+Java Full Stack
+
+Java + Spring-Spring Boot Microservices + Angular
+
+JAVA SOFTWARE
+
+Java 8
+
+STS  : Spring Tool Suite
+Eclipse IDE
+
+IntelliJ
+
+The JAVAC command : It is used to compile a Java program
+
+  javac filename.java
+  
+ dir
+ 
+  javac Test.java --> Test.class (BYTECODE)
+
+  del Test.class
+
+ The JAVA command : It is used to execute a compiled Java program
+
+   java <name of the .class file which has a public static void main(String args[]) method inside it>
+
+  java Test
+
+  Your name
+  Your education
+  Your programming/web development skills
+
+
+JAVA  -> MYSQL -> JDBC -> HTML,CSS,JAVASCRIPT,BOOTSTRAP-> SERVLETS,JSP->HIBERNATE->SPRING CORE->SPRING JPA-> SPRING MVC->SPRING REST->SPRING SECURITY ->SPRING BOOT->MICROSERVICES->(TYPESCRIPT)ANGULAR->DOCKER->PROJECT
+
+
+What is Java?
+Java is a high level object oriented programming language.
+
+Java is used for developing different kinds of applications
+
+1. Desktop applications ->
+           retail store billing systems
+           schools data entry systems
+           hospital data entry systems
+
+2. Web applications  (SERVLETs/JSP)
+             online shopping
+             ticket application
+
+3. Embedded systems
+                 ATM
+                 Gaming devices
+                 Any other chip devices
+           
+
+Java Editions
+     JSE -  Java Standard Edition
+     JEE -  Java Enterprise Edition
+     JME - Java Micro Edition
+
+Java Version History
+
+JDK 1.0 1996  JDK 18
+
+
+Java 4 - 5 -6 - 7 - 8 - 9 -10-11 
+
+JDK
+JVM
+JRE
+JDKTOOLS
+
+
+JDK : Java Development Kit
+
+JVM : Java virtual machine
+
+JRE: Java Runtime Environment
+
+JDK tools : These are the commands such as JAVAC, JAVA, JAR from the  "bin" folder of the JDK installation such as ../JAVA.X.Y.Z	
+
+What is JDK?
+JDK = JRE + JDK TOOLS
+
+JRE = Java Libraries + JVM
+
+JVM : Java Virtual Machine, It is that part of JDK, which is responsible for loading and executing the compiled java code
+
+JVM 
+  loads the byte code (from the .class file such as Test.class) when we say sometihng like "Java Test"
+  converts BYTECODE to NATIVE CODE (CODE THAT AN OS UNDERSTANDS)
+  and then NATIVE CODE is given to OS
+  
+OS will then execute it
+
+JIT : Just In Time  compiler inside JVM
+
+What does JIT do ?
+  or
+ What is the purpose of JIT?
+ 
+ It fastens the conversion of BYTECODE to NATIVE CODE (machine code / object code)
+
+
+  Welcome.java 
+
+
+What are java libraries ?
+  These are nothing but the  IN BUILT  (or ready made) java programs 
+  
+ All these IN BUILT java programs are compressed into  file with a file extension called .JAR (java archive)
+
+  
+ banking.jar
+  movie-tickets.jar
+
+
+What are JDK tools ?
+  These are nothing but the commands such as JAVAC,  JAVA, JAR (and many more) which sit inside the "bin" of JDK installation path
+
+
+   int i = 10;     -32768  to +32767
+  long int x =12345678;
+
+    i = x; n 4000
+   print(i)25435
+
+Java Features
+ Object Oriented
+ Platform independent
+  Robust
+ Simple
+ Multithreaded
+ 
+Understanding IDE
+  Integrated Development Environment
+
+Eclipse
+STS
+IntelliJ
+
+
+A project is a colllection of different files such as .java files, .html files, .css files, .js, 
+
+A workspace is a folder used by IDE such as STS/ECLIPSE to store all our projects
+
+Perspective: A perspective is the window layout and feature display in IDE
+
+ Java Perspective 
+ Java EE perspective
+
+Create a new java project
+Create new "Java class" under "src"
+syso Ctrl+Space  System.out.println
+Ctrl+D  this will delete the line where the cursor is
+
+
+Data types in Java
+There are 8 primitive data types ( fundamental data types / basic data types)
+
+byte     short          int         long        float        double
+ 1          2               4           8             4              8
+
+char -   2
+
+boolean - vendor specific (unspecified in the specification)
+
+
+SYNTAX
+ 
+ DATATTYPE  name-of-the-variable1, name-of-the-variable2 ....;
+
+ byte b1=10;
+  short s1;
+  
+
+
+ Samsung 22 - 
+
+Everything thing such as length,width,thickness, camera, charging, audio,...  are called as specifcation 
+Blueprint
+
+A - high   10 colors
+
+B - medium  5 colors
+
+C-  poor  12 colors
+
+
+if( expression ) {
+    code to execute if expression is true
+} else {
+   code to execute if expression is false
+}
+
+----------------------------------------------------------
+DAY-2 
+
+Casting and conversion
+
+Casting and conversion refers to the process of changing the data type (or class/interface type) of a variable  (or an object )
+
+
+byte v1 = 200;
+int v2 = 200;
+
+  v1 = v2 ;  //  we are trying to assing int (v2) to byte (v1);
+
+ lower-data-type-variable = (lower-data-type) upper-datatype-variable;
+
+ v1 = (byte) v2;
+
+
+CASTING vs CONVERSION
+
+ casting is an explicit action where we expliclity change wider type to narrow type
+
+ conversion is an implicit action where narrow type is automatically changed to wider type
+
+
+LOOPS
+
+ A loop is a programming feature which
+
+
+ while loop
+ for loop
+ do  while
+
+for(part-1 ; part-2 ;part-3)
+
+part-1 is for declarations or initializations
+part-2 is for test condition (expression)
+part-3 is for altering the value used in part-2
+
+the do..while
+
+do  {
+
+   code block;
+} while(test condition) ;
+
+
+All number literals in java by default belong to "int" data type
+
+  12 34 454 45 
+
+
+   long x = 120L;
+
+byte b1 = 20;  (- 128  to 127)
+
+  b1 = (byte) (b1 * 2);  (40 is again inside -128 to 127)
+         (int)
+
+All decimal numbers belong to double data type in java by default
+   float f1 = 12.3;
+ float f1 = 12.3F;
+  float f1 = (float) f1;
+
+
+Class: A class in java can contain any of the following or none of the following 
+  (i) variables
+ (ii) methods (functions)
+ (iii) constants
+ (iv) nested classes (also called inner classes) 
+ (v) enumerations
+ (vi)nested interfaces (also called inner interfaces)
+ 
+
+
+
+ syntax to declare a class
+
+  class classname {
+    list of variables
+    list of methods
+  list of nested classes
+   list of nested interfaces
+   list of enums    
+  } 
+
+ class Student {
+   // list of variables
+   int studentNumber;
+   String studentFirstName;
+
+  // list of methods
+ void printStudentDetails(){
+  System.out.println("Student Number = " +studentNumber);
+   System.out.println("Student name = " + studentFirstName);
+  }
+ }
+
+
+
+
+Object: An object is a special type of a variable whose data type is the name of a class (or an interface)
+
+
+ datatype variable-name;
+  int  x =10;
+  byte z = 20;
+
+
+         Student s1;
+
+Members of an object. All items declared inside a class belong to an object and become its members
+
+  how do we access the members that belong to an object
+    object-name.membername
+
+    s1.studentNumber = 101;
+    s1.studentName="Scott";
+   s1.printDetails(); // this line executes the printDetails() method of the object s1
+
+Working with object, is a two step process
+
+ #1. Declaring an object
+               Student s1;  
+   Declaration does not allocate space in memory to the members that belong to an object
+
+ #2. Creating an object.
+      Creating an object means, allocate space to the members that belong to an object. this is acheived
+    by execute a line of code that contains the  new operator
+     
+
+ The new operator
+    
+   We use the new operator to create object
+
+   syntax
+       object-name = new class-name();
+
+       s1 = new Student();
+
+
+Product
+   productId; (int)
+   prodName;  (String) 
+printProductDetails()
+
+
+ProductMain1
+   main()
+   create two Product class objects
+   fill the object data
+   print them
+
+
+Class and Interface naming best practice
+  
+  All classes and ameinterfaces ns are typed in PascalCase
+  
+ Employee
+ Student
+ EmployeeInsuranceDetails
+
+ 
+All variable and method names are typed in camelCase
+
+   firstName;
+   lastName;
+
+
+Movie ticket class and object.
+  it should contain the relavant one or many methods to book tickets
+  after tickets are booked,  it should then display
+ 
+   Total Tickets available before booking
+   Total tickets available after booking
+    Total number of tickets booked
+
+      if the number of tickets asked to book are more than the total number of available tickets, then a message something
+ like insufficient tickets should be printed
+
+
+
+
+PaySlipDetails
+
+    double grossSalary=8000;
+
+  deductions =   incomeTax, profidentFund, healthInsurance, carLoanEmi
+  netSalary = grossSalary- deductions
+
+ // print gross
+ // print incomeTax
+  // print..
+ // print netSalary
+
+
+PaySlipDetailsMain {
+
+}
+
+
+SalaryFinder {
+
+  void   showSalary(String designation) {
+     // using switch case display some salary  for a designation
+
+ //  if it is manager 8K, clerk 5k, accountatnt 6k
+   }
+ }
+
+ 
+SalaryFinderMain {
+  public static void main(String args[]) {
+   SalaryFinder finder = new SalaryFinder();
+   finder.showSalary("manager");
+   finder.showSalary("clerk");
+  }
+ }
+
+
+Object of one class inside other class
+
+class Address {
+    String city;
+    int zip;
+    void printAddress() {
+    System.out.println("City : " + city);
+    System.out.println("Zip : " + zip);
+  
+  }
+}
+class Employee {
+   int empCode;
+   String empName;
+   Address address = new Address() ;
+    
+   void printDetails() {
+     System.out.println("Employee Code = " + empCode);
+    System.out.println("Employee name = " + empName);
+      address.printAddress();
+   }
+}
+
+class EmployeeAndAddress {
+   public static void main(String args[]) {
+
+
+   Employee e1 = new Employee();
+   e1.empCode=103;
+   e1.empName="Scott";
+   e1.address.zip=12346;
+   e1.address.city="Some city";
+ 
+    e1.printDetails();
+
+Employee e2 = new Employee();
+    e2.address=address;
+    e2.address.city="Two city";
+
+ }
+
+}
+  
+
+
+static members and non static members inside a class
+
+class A {
+   int x;
+  static int y;
+ 
+   void m1(){
+
+   }
+
+   static void m2() {
+
+
+  }
+}
+
+
+STATIC members appear as only one copy in memory for a class, no matter, whether we create 0 objects, 1 object , many objects of that class
+
+There will always be one copy (one and only one copy) of a static member that exists in memory for  a class, even though we don't create an object, or we create 1 or more objects
+
+
+There can be anything as a static or a non static member
+
+There can be a block of code as static
+
+
+What is the need for static ?
+  Any thing which is best suitable to appear/occur only once need to be declared static
+
+
+All static code (sometimes called static context)  is loaded into memory socon after it's .lass file is loaded into memory
+
+There can be any number of static blocks. 
+All static blocks are merged into one according to their textual occurence and are executed soon after the .class file is loaded
+
+ class X {
+   static int v1;
+  static void m1() {  }
+   static{   }
+   static class A {  }
+  static interface B {  }
+}
+
+
+JVM makes a call to the main() method somehting like this one
+
+  Test.main();  // classname.main()
+
+
+Which members of a class are loaded first  ?
+  static or non static 
+
+We cannot use a non static code from inside a static code
+
+class Test {
+  int x = 10;
+  public static void main(String args[]) {
+   System.out.println(x);
+  }
+
+}
+
+class Vendor {
+   int vendorId;
+   String vendorName;  
+ ........
+ 
+}
+
+class Product {
+   int prodId;
+   String prodName;
+   Vendor vendor;
+
+}
+
+
+class BankAccount {
+    int actNum;
+    double actBalance;
+}
+
+
+class Address {
+
+ }
+class Customer {
+   int custId;
+   String custName;
+    BankAccount account;
+    Address address;
+
+}   
+
+
+
+

@@ -1,0 +1,16 @@
+[DEBUG]--2022-09-13 10:21:30 com.pooven.logging.LoggingDemo main 13 this ia a Debug Message 
+[INFO]--2022-09-13 10:21:30 com.pooven.logging.LoggingDemo main 14 this ia a Debug Message 
+[ERROR]--2022-09-13 10:21:30 com.pooven.logging.LoggingDemo main 15 this ia a Debug Message 
+[FATAL]--2022-09-13 10:21:30 com.pooven.logging.LoggingDemo main 16 this ia a Debug Message 
+[DEBUG]--2022-09-13 10:21:44 com.pooven.logging.LoggingDemo main 13 this ia a Debug Message 
+[INFO]--2022-09-13 10:21:44 com.pooven.logging.LoggingDemo main 14 this ia a Debug Message 
+[ERROR]--2022-09-13 10:21:44 com.pooven.logging.LoggingDemo main 15 this ia a Debug Message 
+[FATAL]--2022-09-13 10:21:44 com.pooven.logging.LoggingDemo main 16 this ia a Debug Message 
+[DEBUG]--2022-09-13 10:22:37 com.pooven.logging.LoggingDemo main 13 this ia a Debug Message 
+[INFO]--2022-09-13 10:22:37 com.pooven.logging.LoggingDemo main 14 this ia a Info Message 
+[ERROR]--2022-09-13 10:22:37 com.pooven.logging.LoggingDemo main 15 this ia a Error Message 
+[FATAL]--2022-09-13 10:22:37 com.pooven.logging.LoggingDemo main 16 this ia a Fatal Message 
+[DEBUG]--2022-09-13 14:32:05 com.pooven.logging.LoggingDemo main 13 this ia a Debug Message 
+[INFO]--2022-09-13 14:32:05 com.pooven.logging.LoggingDemo main 14 this ia a Info Message 
+[ERROR]--2022-09-13 14:32:05 com.pooven.logging.LoggingDemo main 15 this ia a Error Message 
+[FATAL]--2022-09-13 14:32:05 com.pooven.logging.LoggingDemo main 16 this ia a Fatal Message 

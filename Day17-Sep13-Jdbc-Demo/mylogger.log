@@ -1,0 +1,51 @@
+[DEBUG]--2022-09-14 09:10:09 com.jdbc.demo.JdbcDemo main 46 Connection Established 
+[DEBUG]--2022-09-14 09:10:09 com.jdbc.demo.JdbcDemo main 57 Statement Object Created  
+[ERROR]--2022-09-14 09:10:09 com.jdbc.demo.JdbcDemo main 72 Unable to insert records Data truncation: Data too long for column 'student_name' at row 1 
+[DEBUG]--2022-09-14 09:10:09 com.jdbc.demo.JdbcDemo main 76 Completed Program 
+[DEBUG]--2022-09-14 09:10:38 com.jdbc.demo.JdbcDemo main 46 Connection Established 
+[DEBUG]--2022-09-14 09:10:38 com.jdbc.demo.JdbcDemo main 57 Statement Object Created  
+[DEBUG]--2022-09-14 09:10:38 com.jdbc.demo.JdbcDemo main 68 INSERT INTO student VALUES(115,'jdbc',20,232232,203) record inserted 
+[DEBUG]--2022-09-14 09:10:38 com.jdbc.demo.JdbcDemo main 76 Completed Program 
+[DEBUG]--2022-09-14 09:59:01 com.jdbc.demo.UpdateDemo main 32 Connection Created 
+[DEBUG]--2022-09-14 10:02:59 com.jdbc.demo.UpdateDemo main 32 Connection Created 
+[DEBUG]--2022-09-14 10:02:59 com.jdbc.demo.UpdateDemo main 51 update student set college_id = 202 where student_id = 103 record inserted 
+[DEBUG]--2022-09-14 10:31:06 com.jdbc.demo.JdbcDemo main 50 Connection Established 
+[DEBUG]--2022-09-14 10:31:06 com.jdbc.demo.JdbcDemo main 61 Statement Object Created  
+[ERROR]--2022-09-14 10:31:06 com.jdbc.demo.JdbcDemo main 77 Unable to insert records Duplicate entry '115' for key 'student.PRIMARY' 
+[DEBUG]--2022-09-14 10:31:06 com.jdbc.demo.JdbcDemo main 98 Completed Program 
+[DEBUG]--2022-09-14 10:33:36 com.jdbc.demo.SelectDemo main 29 Connection Established 
+[DEBUG]--2022-09-14 10:33:36 com.jdbc.demo.SelectDemo main 40 Statement Object Created  
+[DEBUG]--2022-09-14 10:33:36 com.jdbc.demo.SelectDemo main 66 Completed Program 
+[DEBUG]--2022-09-14 11:22:05 com.jdbc.demo.PreapredStatementDemo main 30 Connection Established 
+[DEBUG]--2022-09-14 11:22:05 com.jdbc.demo.PreapredStatementDemo main 48 Row Updated 
+[DEBUG]--2022-09-14 11:22:05 com.jdbc.demo.PreapredStatementDemo main 49 Statement Object Created  
+[DEBUG]--2022-09-14 11:22:05 com.jdbc.demo.PreapredStatementDemo main 58 Completed Program 
+[DEBUG]--2022-09-14 11:23:47 com.jdbc.demo.PreapredStatementDemo main 30 Connection Established 
+[DEBUG]--2022-09-14 11:23:47 com.jdbc.demo.PreapredStatementDemo main 41 Statement Object Created  
+[DEBUG]--2022-09-14 11:23:47 com.jdbc.demo.PreapredStatementDemo main 51 Row Created 
+[DEBUG]--2022-09-14 11:23:47 com.jdbc.demo.PreapredStatementDemo main 60 Row Created 
+[DEBUG]--2022-09-14 11:23:47 com.jdbc.demo.PreapredStatementDemo main 70 Completed Program 
+[DEBUG]--2022-09-14 11:25:23 com.jdbc.demo.PreapredStatementDemo main 30 Connection Established 
+[DEBUG]--2022-09-14 11:25:23 com.jdbc.demo.PreapredStatementDemo main 41 Statement Object Created  
+[ERROR]--2022-09-14 11:25:23 com.jdbc.demo.PreapredStatementDemo main 65 Statement Object not CreatedDuplicate entry '124' for key 'student.PRIMARY' 
+[DEBUG]--2022-09-14 11:25:23 com.jdbc.demo.PreapredStatementDemo main 70 Completed Program 
+[DEBUG]--2022-09-14 11:44:47 com.jdbc.demo.CallableStatementDemo main 30 Connection Established 
+[DEBUG]--2022-09-14 11:44:47 com.jdbc.demo.CallableStatementDemo main 41 Statement Object Created  
+[ERROR]--2022-09-14 11:44:47 com.jdbc.demo.CallableStatementDemo main 65 Statement Object not CreatedDuplicate entry '124' for key 'student.PRIMARY' 
+[DEBUG]--2022-09-14 11:44:47 com.jdbc.demo.CallableStatementDemo main 70 Completed Program 
+[DEBUG]--2022-09-14 11:46:40 com.jdbc.demo.CallableStatementDemo main 30 Connection Established 
+[DEBUG]--2022-09-14 11:46:40 com.jdbc.demo.CallableStatementDemo main 41 Statement Object Created  
+[ERROR]--2022-09-14 11:46:40 com.jdbc.demo.CallableStatementDemo main 65 Statement Object not CreatedDuplicate entry '124' for key 'student.PRIMARY' 
+[DEBUG]--2022-09-14 11:46:40 com.jdbc.demo.CallableStatementDemo main 70 Completed Program 
+[DEBUG]--2022-09-14 11:47:05 com.jdbc.demo.CallableStatementDemo main 30 Connection Established 
+[DEBUG]--2022-09-14 11:47:05 com.jdbc.demo.CallableStatementDemo main 41 Statement Object Created  
+[ERROR]--2022-09-14 11:47:05 com.jdbc.demo.CallableStatementDemo main 65 Statement Object not CreatedDuplicate entry '124' for key 'student.PRIMARY' 
+[DEBUG]--2022-09-14 11:47:05 com.jdbc.demo.CallableStatementDemo main 70 Completed Program 
+[DEBUG]--2022-09-14 11:47:53 com.jdbc.demo.CallableStatementDemo main 30 Connection Established 
+[DEBUG]--2022-09-14 11:47:53 com.jdbc.demo.CallableStatementDemo main 41 Statement Object Created  
+[ERROR]--2022-09-14 11:47:53 com.jdbc.demo.CallableStatementDemo main 65 Statement Object not CreatedDuplicate entry '124' for key 'student.PRIMARY' 
+[DEBUG]--2022-09-14 11:47:53 com.jdbc.demo.CallableStatementDemo main 70 Completed Program 
+[DEBUG]--2022-09-14 11:50:05 com.jdbc.demo.PreapredStatementDemo main 32 Connection Established 
+[DEBUG]--2022-09-14 11:50:05 com.jdbc.demo.PreapredStatementDemo main 46 Statement Object Created  
+[DEBUG]--2022-09-14 11:50:05 com.jdbc.demo.PreapredStatementDemo main 47 Row Created 
+[DEBUG]--2022-09-14 11:50:05 com.jdbc.demo.PreapredStatementDemo main 57 Completed Program 

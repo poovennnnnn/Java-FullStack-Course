@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/pooven/Desktop/NcsCourse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3619547085.index
+341847016.index
+888483049.index
+2020840789.index
+202323038.index
+2173394849.index

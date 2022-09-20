@@ -1,0 +1,12 @@
+[DEBUG]--2022-09-13 14:25:49 com.sonar.demo.SonarDemo1 m1 34 Welcome hello 
+[DEBUG]--2022-09-13 14:25:49 com.sonar.demo.SonarDemo1 m1 34 Welcome hello 
+[DEBUG]--2022-09-13 14:25:49 com.sonar.demo.SonarDemo1 welcome 24 List is null 
+[DEBUG]--2022-09-13 14:33:21 com.sonar.demo.SonarDemo1 m1 34 Welcome hello 
+[DEBUG]--2022-09-13 14:33:21 com.sonar.demo.SonarDemo1 m1 34 Welcome hello 
+[DEBUG]--2022-09-13 14:33:21 com.sonar.demo.SonarDemo1 welcome 24 List is null 
+[DEBUG]--2022-09-13 14:40:05 com.sonar.demo.SonarDemo1 m1 34 Welcome hello 
+[DEBUG]--2022-09-13 14:40:05 com.sonar.demo.SonarDemo1 m1 34 Welcome hello 
+[DEBUG]--2022-09-13 14:40:05 com.sonar.demo.SonarDemo1 welcome 24 List is null 
+[DEBUG]--2022-09-13 14:45:35 com.sonar.demo.SonarDemo1 m1 34 Welcome hello 
+[DEBUG]--2022-09-13 14:45:35 com.sonar.demo.SonarDemo1 m1 34 Welcome hello 
+[DEBUG]--2022-09-13 14:45:35 com.sonar.demo.SonarDemo1 welcome 24 List is null 
