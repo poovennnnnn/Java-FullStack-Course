@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="circleService1" class="com.pooven.spring.CircleService">
+		<property name="circle" ref="hollowCircle" />
+	</bean>
+
+	<bean id="circleService2" class="com.pooven.spring.CircleService">
+		<property name="circle" ref="solidCircle" />
+	</bean>
+	
+	<bean id="circleService3" class="com.pooven.spring.CircleService">
+		<property name="circle" ref="semiSolidCircle" />
+	</bean>
+	
+	
+
+
+
+
+</beans>
+
+

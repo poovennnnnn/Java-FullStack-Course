@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<bean id="a1" class = "com.test2.A"/>
+
+<bean id="b1" class = "com.test2.B" autowire="byName"/>
+<bean id="c1" class = "com.test2.C" autowire="byName"/>
+
+<!-- 
+<bean id="ds1" class = "MyDataStore"/>
+<bean id="employeeDoa" class = "EmployeeDoa" autowire="byType"/>
+<bean id="employeeService" class = "EmployeeService" autowire="byType"/>
+<bean id="employeeController" class = "EmployeeController" autowire="byType"/>
+
+<bean id="ds1" class = "MyDataStore"/>
+<bean id="employeeDoa" class = "EmployeeDoa" autowire="byName"/>
+<bean id="employeeService" class = "EmployeeService" autowire="byName"/>
+<bean id="employeeController" class = "EmployeeController" autowire="byName"/>
+ -->
+
+
+</beans>

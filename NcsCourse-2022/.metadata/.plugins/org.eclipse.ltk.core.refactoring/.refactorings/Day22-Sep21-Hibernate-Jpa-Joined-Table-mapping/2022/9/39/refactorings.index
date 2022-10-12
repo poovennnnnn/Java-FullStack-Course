@@ -1,0 +1,7 @@
+1663743524886	Rename package 'com.hibernate.single.table'
+1663743596103	Rename type 'JpaSingleTableMain'
+1663743963046	Rename type 'Employee'
+1663743969592	Rename type 'ContractEmployee'
+1663743977208	Rename type 'PermanentEmployee'
+1663744125572	Rename type 'JpaTablePerClassMain'
+1663744387901	Rename package 'com.hibernate.table.perclass'

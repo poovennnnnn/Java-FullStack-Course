@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="p1" class="com.examples.dto.Passenger">
+		<property name="passengerId" value="101"></property>
+		<property name="passengerName" value="Pooven"></property>
+
+	</bean>
+
+	<bean id="dataSource" class="com.examples.dao.MyDataSource">
+		<property name="connectionUrl"
+			value="jdbc:mysql://localhost:3306/sample1" />
+		<property name="username" value="root" />
+		<property name="password" value="password" />
+		<property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+
+	</bean>
+
+	<bean id="trivagoDao"
+		class="com.examples.dao.TrivagoBookingProvider">
+		
+		<property name="mydataSource" ref="dataSource"></property>
+
+	</bean>
+
+	<bean id="bookingService"
+		class="com.examples.service.BookingService">
+		<property name="provider" ref="trivagoDao"></property>
+	</bean>
+
+	<bean id="bookingController"
+		class="com.examples.controller.BookingController">
+		<property name="service" ref="bookingService"></property>
+
+	</bean>
+
+
+</beans>
+
+
+
+

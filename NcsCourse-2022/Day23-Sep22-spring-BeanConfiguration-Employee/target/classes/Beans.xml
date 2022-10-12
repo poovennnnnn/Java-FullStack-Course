@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="dataSource" class="com.examples.dao.MyDataSource">
+		<property name="connectionUrl"
+			value="jdbc:mysql://localhost:3306/sample1" />
+		<property name="username" value="root" />
+		<property name="password" value="password" />
+		<property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+
+	</bean>
+
+	<bean id="e1" class="com.examples.dto.Employee">
+
+		<property name="empId" value="102" />
+		<property name="empName" value="pooven" />
+	</bean>
+
+	<bean id="jdbcEmployee" class="com.examples.dao.JDBCEmployeeDao">
+		<property name="myDataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="collectionEmployee"
+		class="com.examples.dao.CollectionEmployeeDao">
+		<property name="myDataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="jpaEmployee" class="com.examples.dao.JPAEmployeeDao">
+		<property name="myDataSource" ref="dataSource"></property>
+	</bean>
+
+
+	<bean id="employeeService1"
+		class="com.examples.service.EmployeeService">
+
+		<property name="empDao" ref="jdbcEmployee" />
+	</bean>
+
+	<bean id="employeeService2"
+		class="com.examples.service.EmployeeService">
+
+		<property name="empDao" ref="collectionEmployee" />
+	</bean>
+
+
+	<bean id="employeeService3"
+		class="com.examples.service.EmployeeService">
+
+		<property name="empDao" ref="jpaEmployee" />
+	</bean>
+
+
+
+	<bean id="employeeController"
+		class="com.examples.controller.EmployeeController">
+
+		<property name="empService" ref="employeeService1" />
+	</bean>
+
+
+</beans>
+
+
+
+

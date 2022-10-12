@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Day22-Sep21-Spring-Example/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pooven.spring{Circle.java[Circle" modifiers="513" timestamp="1663749078000"/>
+    <typeInfo handle="=Day22-Sep21-Spring-Example/\/Library\/Internet Plug-Ins\/JavaAppletPlugin.plugin\/Contents\/Home\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/=/maven.pomderived=/true=/&lt;java.awt.peer(CheckboxMenuItemPeer.class[CheckboxMenuItemPeer" modifiers="1537" timestamp="1655394737000"/>
+    <typeInfo handle="=Day23-Sep22-spring-BeanConfiguration-TicketBooking/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.examples.dao{BookingProvider.java[BookingProvider" modifiers="513" timestamp="1663829176000"/>
+    <typeInfo handle="=Day23-Sep22-Spring-Hibernate-Jpa-Xml/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pooven.dao{StudentDao.java[StudentDao" modifiers="513" timestamp="1663894982000"/>
+    <typeInfo handle="=Day24-Sep23-Spring-CRUD-using-Java-config/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pooven.dao{BankAccountDao.java[BankAccountDao" modifiers="513" timestamp="1663922499000"/>
+    <typeInfo handle="=Pooven-Midterm-2-Assesment/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pooven.service{BankAccountService.java[BankAccountService" modifiers="513" timestamp="1664193933000"/>
+    <typeInfo handle="=Day26-Sep27-SpringBoot-ProductService/\/Users\/pooven\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.7.3\/spring-data-jpa-2.7.3.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.7.3=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1664264902000"/>
+</typeInfoHistroy>

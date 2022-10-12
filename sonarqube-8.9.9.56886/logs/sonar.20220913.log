@@ -1,0 +1,39 @@
+--> Wrapper Started as Daemon
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+
+WARNING - Unable to load the Wrapper's native library because none of the
+          following files:
+            libwrapper-macosx-x86-64.dylib
+            libwrapper-macosx-universal-64.dylib
+            libwrapper.dylib
+          could be located on the following java.library.path:
+            /Users/pooven/Desktop/sonarqube-8.9.9.56886/bin/macosx-universal-64/./lib
+          Please see the documentation for the wrapper.java.library.path
+          configuration property.
+          System signals will not be handled correctly.
+
+2022.09.13 12:07:32 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /Users/pooven/Desktop/sonarqube-8.9.9.56886/temp
+2022.09.13 12:07:32 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:49875]
+2022.09.13 12:07:32 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/Users/pooven/Desktop/sonarqube-8.9.9.56886/elasticsearch]: /Users/pooven/Desktop/sonarqube-8.9.9.56886/elasticsearch/bin/elasticsearch
+2022.09.13 12:07:33 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+warning: no-jdk distributions that do not bundle a JDK are deprecated and will be removed in a future release
+2022.09.13 12:07:41 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2022.09.13 12:07:41 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/Users/pooven/Desktop/sonarqube-8.9.9.56886]: /Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/Users/pooven/Desktop/sonarqube-8.9.9.56886/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-8.9.9.56886.jar:/Users/pooven/Desktop/sonarqube-8.9.9.56886/lib/jdbc/h2/h2-1.4.199.jar org.sonar.server.app.WebServer /Users/pooven/Desktop/sonarqube-8.9.9.56886/temp/sq-process15896934423810786872properties
+2022.09.13 12:08:08 WARN  app[][startup] ####################################################################################################################
+2022.09.13 12:08:08 WARN  app[][startup] Default Administrator credentials are still being used. Make sure to change the password or deactivate the account.
+2022.09.13 12:08:08 WARN  app[][startup] ####################################################################################################################
+2022.09.13 12:08:49 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2022.09.13 12:08:49 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/Users/pooven/Desktop/sonarqube-8.9.9.56886]: /Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/Users/pooven/Desktop/sonarqube-8.9.9.56886/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-8.9.9.56886.jar:/Users/pooven/Desktop/sonarqube-8.9.9.56886/lib/jdbc/h2/h2-1.4.199.jar org.sonar.ce.app.CeServer /Users/pooven/Desktop/sonarqube-8.9.9.56886/temp/sq-process17742283753224872445properties
+2022.09.13 12:08:53 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2022.09.13 12:08:53 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+TERM trapped.  Shutting down.
+2022.09.13 14:55:02 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2022.09.13 14:55:02 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2022.09.13 14:55:03 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2022.09.13 14:55:04 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2022.09.13 14:55:04 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2022.09.13 14:55:04 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped

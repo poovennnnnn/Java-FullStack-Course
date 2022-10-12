@@ -1,0 +1,20 @@
+import javax.persistence.*;
+
+@Entity
+@Table(name = "employee")
+public class Employee {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "emp_id")
+    private Integer empId;
+
+    @Column(name = "emp_name")
+    private String empName;
+
+    @Column(name = "job")
+    private String job;
+
+    @Column(name = "salary")
+    private Integer salary;
+}
