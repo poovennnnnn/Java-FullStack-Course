@@ -1,0 +1,54 @@
+package com.pooven.controller;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pooven.dto.User;
+import com.pooven.dto.UserRequest;
+import com.pooven.dto.UserResponse;
+import com.pooven.service.UserService;
+import com.pooven.util.JwtUtil;
+
+@RestController
+@RequestMapping("/auth")
+public class UserRestController {
+	
+	@Autowired
+	private AuthenticationManager authenticationManager;
+	
+	@Autowired
+	private UserService service;
+	
+	@Autowired
+	private JwtUtil jwtUtil;
+	
+	
+	@PostMapping("/signup")
+	public ResponseEntity<String> save(@Valid @RequestBody User user){
+		
+		Integer id = service.saveUser(user);
+		String body = "User "+id+ " is saved";
+		return ResponseEntity.ok(body);
+	}
+	
+	
+	@PostMapping("/login")
+	public ResponseEntity<UserResponse> login(@RequestBody UserRequest userRequest){
+		
+		authenticationManager.authenticate(
+				new UsernamePasswordAuthenticationToken(
+						userRequest.getUsername(), userRequest.getPassword()));
+		
+		
+		return ResponseEntity.ok(null);
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.pooven.dto;
+
+public class UserResponse {
+
+	public UserResponse() {
+		super();
+	}
+
+}

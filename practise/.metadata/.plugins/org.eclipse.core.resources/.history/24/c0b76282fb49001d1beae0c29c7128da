@@ -1,0 +1,9 @@
+package com.pooven.dto;
+
+public class SignUpDto {
+
+	public SignUpDto() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

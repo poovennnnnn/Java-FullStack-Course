@@ -1,0 +1,5 @@
+package com.pooven.config;
+
+public class InvalidUserAuthenticationEntryPoint {
+
+}

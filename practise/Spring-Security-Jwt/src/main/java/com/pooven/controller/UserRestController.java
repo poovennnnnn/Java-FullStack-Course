@@ -1,0 +1,80 @@
+package com.pooven.controller;
+
+import java.security.Principal;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pooven.dto.User;
+import com.pooven.dto.UserRequest;
+import com.pooven.dto.UserResponse;
+import com.pooven.service.UserService;
+import com.pooven.util.JwtUtil;
+
+@RestController
+@RequestMapping("/auth")
+public class UserRestController {
+	
+	@Autowired
+	private AuthenticationManager authenticationManager;
+	
+	@Autowired
+	private UserService service;
+	
+	@Autowired
+	private JwtUtil jwtUtil;
+	
+	
+	@PostMapping("/signup")
+	public ResponseEntity<Object> save(@Valid @RequestBody User user){
+		
+		if(service.existsByUsername(user.getUsername())) {
+			return new ResponseEntity<Object>("User Already Exists ",HttpStatus.BAD_GATEWAY);
+		}
+		
+		Integer id = service.saveUser(user);
+		String body = "User "+id+ " is saved";
+		return ResponseEntity.ok(body);
+	}
+	
+	
+	@PostMapping("/login")
+	public ResponseEntity<UserResponse> login(@RequestBody UserRequest userRequest){
+		
+		//this will authenticate and throw an exception if auth fails
+		authenticationManager.authenticate(
+				new UsernamePasswordAuthenticationToken(
+						userRequest.getUsername(), userRequest.getPassword()));
+		
+		//generate Token 
+		String token = jwtUtil.generateToken(userRequest.getUsername());
+		
+		
+		return ResponseEntity.ok(new UserResponse(token,"token created succesfully"));
+	}
+
+	
+	@GetMapping("/welcome")
+	@PreAuthorize("hasAnyRole('USER')")
+	public ResponseEntity<String> accessData(Principal p){
+		return ResponseEntity.ok("Hello User => "+p.getName());
+	}
+	
+	
+	@GetMapping("/admin")
+	@PreAuthorize("hasAnyRole('ADMIN')")
+	public ResponseEntity<String> admin(){
+		return ResponseEntity.ok("Hello admin");
+	}
+}

@@ -1,0 +1,9 @@
+package com.pooven.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.pooven.dto.User;
+
+public interface UserRepo extends JpaRepository<User, Integer> {
+
+}

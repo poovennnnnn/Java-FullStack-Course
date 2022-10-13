@@ -1,0 +1,38 @@
+package com.pooven.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+import com.pooven.dto.User;
+import com.pooven.repo.UserRepo;
+
+
+@Service
+public class UserServiceImpl  implements UserService , UserDetailsService{
+	
+	@Autowired
+	private UserRepo repo;
+
+	@Override
+	public Integer saveUser(User user) {
+		return repo.save(user);
+	}
+
+	@Override
+	public Optional<User> findByUsername(String username) {
+		return Optional.empty();
+	}
+
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

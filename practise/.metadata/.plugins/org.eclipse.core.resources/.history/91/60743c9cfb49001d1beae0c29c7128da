@@ -1,0 +1,8 @@
+package com.pooven.dto;
+
+public class SignUpDto {
+
+	public SignUpDto() {
+	}
+
+}

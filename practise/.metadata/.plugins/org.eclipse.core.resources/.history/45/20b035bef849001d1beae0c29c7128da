@@ -1,0 +1,5 @@
+package com.pooven.dto;
+
+public class User {
+
+}
